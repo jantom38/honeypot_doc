@@ -80,49 +80,6 @@ def test_database():
         print_test("SQLite Database", False, str(e))
         return False
 
-def test_geoip():
-    """Test GeoIP2 database"""
-    db_path = 'GeoLite2-City.mmdb'
-    
-    # Obsługa przypadku gdy ścieżka jest katalogiem (np. po rozpakowaniu)
-    if os.path.isdir(db_path):
-        found = False
-        for root, dirs, files in os.walk(db_path):
-            for file in files:
-                if file.endswith('.mmdb') and 'City' in file:
-                    db_path = os.path.join(root, file)
-                    found = True
-                    break
-            if found:
-                break
-        
-        if not found:
-            # Próba znalezienia jakiegokolwiek pliku mmdb jeśli nie znaleziono City
-            for root, dirs, files in os.walk('GeoLite2-City.mmdb'):
-                for file in files:
-                    if file.endswith('.mmdb'):
-                        db_path = os.path.join(root, file)
-                        found = True
-                        break
-                if found:
-                    break
-
-    if not os.path.exists(db_path) or os.path.isdir(db_path):
-        print_test("GeoIP2 Database", False, "Plik GeoLite2-City.mmdb nie znaleziony (opcjonalny)")
-        return False
-    
-    try:
-        import geoip2.database
-        reader = geoip2.database.Reader(db_path)
-        response = reader.city('8.8.8.8')
-        reader.close()
-        print_test("GeoIP2 Database", True, 
-                  f"Test OK: {response.country.name}, {response.city.name}")
-        return True
-    except Exception as e:
-        print_test("GeoIP2 Database", False, str(e))
-        return False
-
 def test_ports():
     """Test if ports are available"""
     import socket
@@ -187,7 +144,6 @@ def main():
     # Optional Modules
     print_header("3️⃣ Optional Python Modules")
     optional_modules = [
-        ('geoip2', 'geoip2'),
         ('paramiko', 'paramiko'),
     ]
     
@@ -223,16 +179,8 @@ def main():
     results['total'] += 1
     results['passed' if result else 'failed'] += 1
     
-    # Optional: GeoIP
-    print_header("6️⃣ Optional Components")
-    result = test_geoip()
-    results['total'] += 1
-    # Don't count GeoIP as failed since it's optional
-    if not result:
-        print("   ℹ️  GeoIP2 jest opcjonalny - system będzie działał bez niego")
-    
     # Port Availability
-    print_header("7️⃣ Port Availability")
+    print_header("6️⃣ Port Availability")
     result = test_ports()
     results['total'] += 1
     results['passed' if result else 'failed'] += 1
