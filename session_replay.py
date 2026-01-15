@@ -6,8 +6,6 @@ import logging
 import os
 
 class SessionReplay:
-    """System for recording and replaying attack sessions"""
-    
     def __init__(self, db_path=None):
         if db_path is None:
             IS_DOCKER = os.environ.get('IS_DOCKER', 'false').lower() == 'true'
@@ -19,7 +17,6 @@ class SessionReplay:
             self.db_path = db_path
     
     def get_session_details(self, session_id: str) -> Optional[Dict]:
-        """Get detailed information about a session"""
         try:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
@@ -72,7 +69,6 @@ class SessionReplay:
             return None
     
     def get_all_sessions(self, limit: int = 100, service: str = None) -> List[Dict]:
-        """Get list of all sessions"""
         try:
             if not os.path.exists(self.db_path):
                 return []
@@ -126,16 +122,6 @@ class SessionReplay:
             return []
     
     def replay_session(self, session_id: str, speed: float = 1.0):
-        """
-        Replay a session with timing information
-        
-        Args:
-            session_id: Session ID to replay
-            speed: Playback speed multiplier (1.0 = real-time, 2.0 = 2x speed)
-        
-        Yields:
-            Dict with event information and timing
-        """
         session = self.get_session_details(session_id)
         if not session:
             return
@@ -164,7 +150,6 @@ class SessionReplay:
             }
     
     def export_session_to_text(self, session_id: str) -> str:
-        """Export session as readable text"""
         session = self.get_session_details(session_id)
         if not session:
             return "Session not found"
@@ -195,7 +180,6 @@ class SessionReplay:
         return "\n".join(output)
     
     def get_session_statistics(self, session_id: str) -> Dict:
-        """Get statistics for a specific session"""
         session = self.get_session_details(session_id)
         if not session:
             return {}

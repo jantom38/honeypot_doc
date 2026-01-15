@@ -14,7 +14,6 @@ USERNAMES = ["admin", "root", "user", "support", "oracle", "test", "ftp", "anony
 PASSWORDS = ["123456", "password", "admin123", "qwerty", "letmein", "toor", "ftp", "anonymous"]
 
 def attack_ssh():
-    """Symuluje próbę logowania SSH."""
     user = random.choice(USERNAMES)
     pwd = random.choice(PASSWORDS)
     print(f"[SSH] Atak: {user}:{pwd}...", end=" ")
@@ -32,7 +31,6 @@ def attack_ssh():
         print(f"Błąd: {e}")
 
 def attack_http():
-    """Symuluje skanowanie HTTP."""
     paths = ["/admin", "/login", "/wp-admin", "/config.php", "/", 
              "/?id=1' OR '1'='1", "/index.php?page=../../../etc/passwd",
              "/?name=<script>alert('XSS')</script>"]
@@ -48,7 +46,6 @@ def attack_http():
         print(f"OK (honeypot odpowiedział)")
 
 def attack_ftp():
-    """Symuluje próbę logowania FTP."""
     user = random.choice(USERNAMES)
     pwd = random.choice(PASSWORDS)
     print(f"[FTP] Atak: {user}:{pwd}...", end=" ")
@@ -68,7 +65,6 @@ def attack_ftp():
         print(f"OK (połączono)")
 
 def attack_telnet():
-    """Symuluje próbę logowania Telnet."""
     user = random.choice(USERNAMES)
     pwd = random.choice(PASSWORDS)
     print(f"[TELNET] Atak: {user}:{pwd}...", end=" ")
@@ -89,7 +85,6 @@ def attack_telnet():
         print(f"OK (połączono)")
 
 def attack_mysql():
-    """Symuluje próbę logowania MySQL."""
     print(f"[MYSQL] Atak na port {MYSQL_PORT}...", end=" ")
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

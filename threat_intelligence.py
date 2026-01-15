@@ -4,12 +4,6 @@ import json
 from datetime import datetime, timedelta
 
 class ThreatIntelligence:
-    """
-    Moduł do analizy zagrożeń wykorzystujący:
-    - AbuseIPDB dla reputacji IP
-    - Lokalne reguły klasyfikacji
-    """
-    
     def __init__(self, config):
         self.config = config
         self.abuseipdb_api_key = config.get('abuseipdb_api_key')
