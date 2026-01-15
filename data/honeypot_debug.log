@@ -1,0 +1,1680 @@
+2026-01-14 22:54:08,355 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-14 22:54:08,356 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-14 22:54:08,362 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-14 22:54:08,362 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 22:54:08,363 [INFO] Environment: Docker
+2026-01-14 22:54:08,363 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-14 22:54:08,364 [INFO] Threat Intelligence: Enabled
+2026-01-14 22:54:08,365 [INFO] ==================================================
+2026-01-14 22:54:08,366 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-14 22:54:08,366 [INFO] ==================================================
+2026-01-14 22:54:08,368 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 22:54:08,369 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 22:54:08,369 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 22:54:08,369 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 22:54:08,369 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 22:54:08,370 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-14 22:54:08,370 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 22:54:08,372 [INFO] 🔍 System monitoruje połączenia...
+2026-01-14 22:54:08,374 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-14 22:55:49,990 [INFO] [+] Połączenie z 172.19.0.1:41504 na porcie 2222 (SSH)
+2026-01-14 22:55:49,991 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-14 22:55:50,524 [INFO] [+] Połączenie z 172.19.0.1:46020 na porcie 8080 (HTTP)
+2026-01-14 22:55:50,525 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-14 22:55:52,292 [INFO] Zapisano zdarzenie #1 w DB: Fake HTTP od 172.19.0.1
+2026-01-14 22:55:52,323 [INFO] Zapisano zdarzenie #2 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:55:52,323 [INFO] [Fake SSH] Dane od 172.19.0.1: oracle
+qwerty
+2026-01-14 22:55:52,911 [INFO] [+] Połączenie z 172.19.0.1:41518 na porcie 2222 (SSH)
+2026-01-14 22:55:52,913 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-14 22:55:53,051 [INFO] Zapisano zdarzenie #3 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:55:53,441 [INFO] [+] Połączenie z 172.19.0.1:60096 na porcie 2323 (TELNET)
+2026-01-14 22:55:53,442 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-14 22:55:53,799 [INFO] Zapisano zdarzenie #4 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:55:53,799 [INFO] [Fake SSH] Dane od 172.19.0.1: oracle
+admin123
+2026-01-14 22:55:54,411 [INFO] Zapisano zdarzenie #5 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:55:54,411 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: anonymous
+2026-01-14 22:55:54,625 [INFO] Zapisano zdarzenie #6 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:55:55,521 [INFO] Zapisano zdarzenie #7 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:55:55,523 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: qwerty
+2026-01-14 22:55:56,354 [INFO] Zapisano zdarzenie #8 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:55:57,520 [INFO] [+] Połączenie z 172.19.0.1:47566 na porcie 2323 (TELNET)
+2026-01-14 22:55:57,521 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-14 22:55:58,320 [INFO] Zapisano zdarzenie #9 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:55:58,321 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: support
+2026-01-14 22:55:59,042 [INFO] Zapisano zdarzenie #10 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:55:59,045 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: 123456
+2026-01-14 22:56:00,548 [INFO] Zapisano zdarzenie #11 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:01,791 [INFO] [+] Połączenie z 172.19.0.1:33898 na porcie 2121 (FTP)
+2026-01-14 22:56:01,792 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:56:02,944 [INFO] Zapisano zdarzenie #12 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:02,945 [INFO] [Fake FTP] Dane od 172.19.0.1: USER anonymous
+2026-01-14 22:56:05,663 [INFO] Zapisano zdarzenie #13 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:06,697 [INFO] [+] Połączenie z 172.19.0.1:42414 na porcie 8080 (HTTP)
+2026-01-14 22:56:06,719 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-14 22:56:08,981 [INFO] Zapisano zdarzenie #14 w DB: Fake HTTP od 172.19.0.1
+2026-01-14 22:56:09,936 [INFO] [+] Połączenie z 172.19.0.1:45370 na porcie 2323 (TELNET)
+2026-01-14 22:56:09,937 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-14 22:56:10,457 [INFO] Zapisano zdarzenie #15 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:10,457 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: test
+2026-01-14 22:56:10,862 [INFO] Zapisano zdarzenie #16 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:10,866 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: 123456
+2026-01-14 22:56:11,335 [INFO] Zapisano zdarzenie #17 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:12,048 [INFO] [+] Połączenie z 172.19.0.1:45386 na porcie 2323 (TELNET)
+2026-01-14 22:56:12,050 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-14 22:56:12,429 [INFO] Zapisano zdarzenie #18 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:12,429 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: user
+2026-01-14 22:56:12,999 [INFO] Zapisano zdarzenie #19 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:13,001 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: qwerty
+2026-01-14 22:56:13,730 [INFO] Zapisano zdarzenie #20 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:14,395 [INFO] [+] Połączenie z 172.19.0.1:33818 na porcie 2121 (FTP)
+2026-01-14 22:56:14,396 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:56:17,059 [INFO] Zapisano zdarzenie #21 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:17,059 [INFO] [Fake FTP] Dane od 172.19.0.1: USER root
+2026-01-14 22:56:18,348 [INFO] [+] Połączenie z 172.19.0.1:33820 na porcie 2121 (FTP)
+2026-01-14 22:56:18,350 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:56:18,671 [INFO] Zapisano zdarzenie #22 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:18,698 [INFO] Zapisano zdarzenie #23 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:18,698 [INFO] [Fake FTP] Dane od 172.19.0.1: USER user
+2026-01-14 22:56:19,173 [INFO] Zapisano zdarzenie #24 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:19,175 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS qwerty
+2026-01-14 22:56:19,548 [INFO] Zapisano zdarzenie #25 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:20,522 [INFO] [+] Połączenie z 172.19.0.1:33822 na porcie 2121 (FTP)
+2026-01-14 22:56:20,523 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:56:21,286 [INFO] Zapisano zdarzenie #26 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:21,287 [INFO] [Fake FTP] Dane od 172.19.0.1: USER ftp
+2026-01-14 22:56:22,802 [INFO] Zapisano zdarzenie #27 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:22,805 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin123
+2026-01-14 22:56:23,777 [INFO] Zapisano zdarzenie #28 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:24,900 [INFO] [+] Połączenie z 172.19.0.1:41180 na porcie 2121 (FTP)
+2026-01-14 22:56:24,900 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:56:28,311 [INFO] [+] Połączenie z 172.19.0.1:41194 na porcie 2121 (FTP)
+2026-01-14 22:56:28,313 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:56:29,172 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:56:29,292 [INFO] Zapisano zdarzenie #29 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:29,294 [INFO] [Fake FTP] Dane od 172.19.0.1: USER support
+2026-01-14 22:56:30,428 [INFO] Zapisano zdarzenie #30 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:30,428 [INFO] [Fake FTP] Dane od 172.19.0.1: USER support
+2026-01-14 22:56:30,457 [INFO] Zapisano zdarzenie #31 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:31,793 [INFO] [+] Połączenie z 172.19.0.1:41932 na porcie 8080 (HTTP)
+2026-01-14 22:56:31,795 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /?name=<script>alert('XSS')</script> HTTP/1.1
+2026-01-14 22:56:33,015 [INFO] Zapisano zdarzenie #32 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:35,648 [INFO] [+] Połączenie z 172.19.0.1:60890 na porcie 2222 (SSH)
+2026-01-14 22:56:35,649 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-14 22:56:35,897 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:56:35,997 [INFO] Zapisano zdarzenie #33 w DB: Fake HTTP od 172.19.0.1
+2026-01-14 22:56:36,621 [INFO] [+] Połączenie z 172.19.0.1:60544 na porcie 2323 (TELNET)
+2026-01-14 22:56:36,622 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-14 22:56:36,757 [INFO] Zapisano zdarzenie #34 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:56:36,758 [INFO] [Fake SSH] Dane od 172.19.0.1: admin
+admin123
+2026-01-14 22:56:38,294 [INFO] Zapisano zdarzenie #35 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:56:40,683 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:56:40,776 [INFO] Zapisano zdarzenie #36 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:40,777 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: ftp
+2026-01-14 22:56:45,614 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:56:45,668 [INFO] Zapisano zdarzenie #37 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:45,668 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin123
+2026-01-14 22:56:49,404 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:56:49,510 [INFO] Zapisano zdarzenie #38 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:56:50,658 [INFO] [+] Połączenie z 172.19.0.1:34552 na porcie 2121 (FTP)
+2026-01-14 22:56:50,659 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:56:54,028 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:56:54,096 [INFO] Zapisano zdarzenie #39 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:54,097 [INFO] [Fake FTP] Dane od 172.19.0.1: USER user
+2026-01-14 22:56:54,641 [INFO] [+] Połączenie z 172.19.0.1:41124 na porcie 8080 (HTTP)
+2026-01-14 22:56:54,650 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-14 22:56:57,308 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:56:57,406 [INFO] Zapisano zdarzenie #40 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:56:57,582 [INFO] Zapisano zdarzenie #41 w DB: Fake HTTP od 172.19.0.1
+2026-01-14 22:56:58,066 [INFO] [+] Połączenie z 172.19.0.1:60368 na porcie 2121 (FTP)
+2026-01-14 22:56:58,067 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:57:01,863 [INFO] [+] Połączenie z 172.19.0.1:60376 na porcie 2121 (FTP)
+2026-01-14 22:57:01,866 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-14 22:57:03,398 [INFO] Zapisano zdarzenie #42 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:57:03,399 [INFO] [Fake FTP] Dane od 172.19.0.1: USER root
+2026-01-14 22:57:05,184 [INFO] [+] Połączenie z 172.19.0.1:40264 na porcie 2222 (SSH)
+2026-01-14 22:57:05,185 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-14 22:57:05,673 [INFO] [+] Połączenie z 172.19.0.1:36688 na porcie 2323 (TELNET)
+2026-01-14 22:57:05,673 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-14 22:57:06,172 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:57:06,233 [INFO] Zapisano zdarzenie #43 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:57:06,233 [INFO] [Fake FTP] Dane od 172.19.0.1: USER anonymous
+2026-01-14 22:57:06,740 [INFO] Zapisano zdarzenie #44 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:57:06,741 [INFO] [Fake SSH] Dane od 172.19.0.1: admin
+qwerty
+2026-01-14 22:57:06,752 [INFO] Zapisano zdarzenie #45 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:06,753 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: user
+2026-01-14 22:57:06,775 [INFO] Zapisano zdarzenie #46 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:57:06,950 [INFO] Zapisano zdarzenie #47 w DB: Fake FTP od 172.19.0.1
+2026-01-14 22:57:07,213 [INFO] Zapisano zdarzenie #48 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:57:07,293 [INFO] Zapisano zdarzenie #49 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:07,294 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: anonymous
+2026-01-14 22:57:08,051 [INFO] Zapisano zdarzenie #50 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:08,689 [INFO] [+] Połączenie z 172.19.0.1:36702 na porcie 2323 (TELNET)
+2026-01-14 22:57:08,690 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-14 22:57:09,957 [INFO] Zapisano zdarzenie #51 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:09,958 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: oracle
+2026-01-14 22:57:10,473 [INFO] Zapisano zdarzenie #52 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:10,475 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: 123456
+2026-01-14 22:57:11,586 [INFO] Zapisano zdarzenie #53 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:12,884 [INFO] [+] Połączenie z 172.19.0.1:36716 na porcie 2323 (TELNET)
+2026-01-14 22:57:12,884 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-14 22:57:13,874 [INFO] Zapisano zdarzenie #54 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:13,875 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: root
+2026-01-14 22:57:17,925 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:57:18,015 [INFO] Zapisano zdarzenie #55 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:18,016 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: qwerty
+2026-01-14 22:57:20,855 [INFO] Zapisano zdarzenie #56 w DB: Fake Telnet od 172.19.0.1
+2026-01-14 22:57:21,801 [INFO] [+] Połączenie z 172.19.0.1:53606 na porcie 8080 (HTTP)
+2026-01-14 22:57:21,802 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-14 22:57:23,297 [INFO] Zapisano zdarzenie #57 w DB: Fake HTTP od 172.19.0.1
+2026-01-14 22:57:23,808 [INFO] [+] Połączenie z 172.19.0.1:53612 na porcie 8080 (HTTP)
+2026-01-14 22:57:23,821 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /wp-admin HTTP/1.1
+2026-01-14 22:57:24,712 [INFO] Zapisano zdarzenie #58 w DB: Fake HTTP od 172.19.0.1
+2026-01-14 22:57:25,675 [INFO] [+] Połączenie z 172.19.0.1:59428 na porcie 8080 (HTTP)
+2026-01-14 22:57:25,691 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /wp-admin HTTP/1.1
+2026-01-14 22:57:29,449 [INFO] [+] Połączenie z 172.19.0.1:50528 na porcie 2222 (SSH)
+2026-01-14 22:57:29,450 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-14 22:57:29,735 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-14 22:57:29,814 [INFO] Zapisano zdarzenie #59 w DB: Fake HTTP od 172.19.0.1
+2026-01-14 22:57:35,398 [INFO] Zapisano zdarzenie #60 w DB: Fake SSH od 172.19.0.1
+2026-01-14 22:57:35,399 [INFO] [Fake SSH] Dane od 172.19.0.1: admin
+admin123
+2026-01-14 22:57:36,499 [INFO] Zapisano zdarzenie #61 w DB: Fake SSH od 172.19.0.1
+2026-01-14 23:11:44,813 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-14 23:11:44,814 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-14 23:11:44,819 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-14 23:11:44,819 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 23:11:44,820 [INFO] Environment: Docker
+2026-01-14 23:11:44,820 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-14 23:11:44,820 [INFO] Threat Intelligence: Enabled
+2026-01-14 23:11:44,821 [INFO] ==================================================
+2026-01-14 23:11:44,821 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-14 23:11:44,821 [INFO] ==================================================
+2026-01-14 23:11:44,824 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 23:11:44,824 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 23:11:44,824 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 23:11:44,825 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 23:11:44,825 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 23:11:44,825 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-14 23:11:44,825 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 23:11:44,827 [INFO] 🔍 System monitoruje połączenia...
+2026-01-14 23:11:44,827 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-14 23:28:54,625 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-14 23:28:54,627 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-14 23:28:54,632 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-14 23:28:54,632 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 23:28:54,633 [INFO] Environment: Docker
+2026-01-14 23:28:54,633 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-14 23:28:54,633 [INFO] Threat Intelligence: Enabled
+2026-01-14 23:28:54,634 [INFO] ==================================================
+2026-01-14 23:28:54,634 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-14 23:28:54,634 [INFO] ==================================================
+2026-01-14 23:28:54,636 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 23:28:54,636 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 23:28:54,636 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 23:28:54,638 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 23:28:54,638 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 23:28:54,638 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-14 23:28:54,638 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 23:28:54,639 [INFO] 🔍 System monitoruje połączenia...
+2026-01-14 23:28:54,640 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 09:35:14,691 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 09:35:14,692 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 09:35:14,697 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 09:35:14,697 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 09:35:14,697 [INFO] Environment: Docker
+2026-01-15 09:35:14,698 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 09:35:14,698 [INFO] Threat Intelligence: Enabled
+2026-01-15 09:35:14,699 [INFO] ==================================================
+2026-01-15 09:35:14,699 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 09:35:14,699 [INFO] ==================================================
+2026-01-15 09:35:14,701 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 09:35:14,701 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 09:35:14,702 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 09:35:14,703 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 09:35:14,703 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 09:35:14,704 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 09:35:14,704 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 09:35:14,703 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 09:35:14,705 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 09:35:47,279 [INFO] [+] Połączenie z 172.19.0.1:43558 na porcie 8080 (HTTP)
+2026-01-15 09:35:47,281 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 09:35:47,281 [INFO] [+] Połączenie z 172.19.0.1:43562 na porcie 8080 (HTTP)
+2026-01-15 09:35:48,072 [INFO] Zapisano zdarzenie #62 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:35:48,303 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 09:35:48,792 [INFO] Zapisano zdarzenie #63 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:36:58,719 [INFO] Baza danych zainicjalizowana pomyślnie: C:\Users\jasie\honeypot_projekt\data\honeypot_events.db
+2026-01-15 10:36:58,720 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 10:36:58,720 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 10:36:58,721 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 10:36:58,721 [INFO] Environment: Local
+2026-01-15 10:36:58,721 [INFO] Database Path: C:\Users\jasie\honeypot_projekt\data\honeypot_events.db
+2026-01-15 10:36:58,722 [INFO] Threat Intelligence: Enabled
+2026-01-15 10:36:58,722 [INFO] ==================================================
+2026-01-15 10:36:58,722 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 10:36:58,722 [INFO] ==================================================
+2026-01-15 10:36:58,723 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 10:36:58,724 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 10:36:58,724 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 10:36:58,725 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 10:36:58,725 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 10:36:58,725 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 10:36:58,725 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 10:36:58,727 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 10:36:58,728 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 09:37:17,529 [INFO] [+] Połączenie z 172.19.0.1:52224 na porcie 2323 (TELNET)
+2026-01-15 09:37:17,530 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 09:37:18,199 [INFO] Zapisano zdarzenie #64 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:37:18,199 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: support
+2026-01-15 09:37:18,907 [INFO] Zapisano zdarzenie #65 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:37:18,909 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin123
+2026-01-15 09:37:19,441 [INFO] Zapisano zdarzenie #66 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:37:20,264 [INFO] [+] Połączenie z 172.19.0.1:35794 na porcie 2121 (FTP)
+2026-01-15 09:37:20,266 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:37:20,849 [INFO] Zapisano zdarzenie #67 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:20,850 [INFO] [Fake FTP] Dane od 172.19.0.1: USER ftp
+2026-01-15 09:37:21,397 [INFO] Zapisano zdarzenie #68 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:21,398 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS password
+2026-01-15 09:37:21,919 [INFO] Zapisano zdarzenie #69 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:22,700 [INFO] [+] Połączenie z 172.19.0.1:35810 na porcie 2121 (FTP)
+2026-01-15 09:37:22,701 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:37:23,324 [INFO] Zapisano zdarzenie #70 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:23,325 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 09:37:24,075 [INFO] Zapisano zdarzenie #71 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:24,077 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS ftp
+2026-01-15 09:37:24,586 [INFO] Zapisano zdarzenie #72 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:25,468 [INFO] [+] Połączenie z 172.19.0.1:42058 na porcie 2222 (SSH)
+2026-01-15 09:37:25,469 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 09:37:25,937 [INFO] [+] Połączenie z 172.19.0.1:49186 na porcie 8080 (HTTP)
+2026-01-15 09:37:25,947 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /login HTTP/1.1
+2026-01-15 09:37:26,100 [INFO] Zapisano zdarzenie #73 w DB: Fake SSH od 172.19.0.1
+2026-01-15 09:37:26,101 [INFO] [Fake SSH] Dane od 172.19.0.1: ftp
+123456
+2026-01-15 09:37:26,394 [INFO] Zapisano zdarzenie #74 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:37:26,639 [INFO] Zapisano zdarzenie #75 w DB: Fake SSH od 172.19.0.1
+2026-01-15 09:37:27,394 [INFO] [+] Połączenie z 172.19.0.1:45810 na porcie 2121 (FTP)
+2026-01-15 09:37:27,394 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:37:27,895 [INFO] Zapisano zdarzenie #76 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:27,895 [INFO] [Fake FTP] Dane od 172.19.0.1: USER test
+2026-01-15 09:37:28,220 [INFO] Zapisano zdarzenie #77 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:28,223 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS ftp
+2026-01-15 09:37:28,560 [INFO] Zapisano zdarzenie #78 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:29,562 [INFO] [+] Połączenie z 172.19.0.1:45818 na porcie 2121 (FTP)
+2026-01-15 09:37:29,563 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:37:30,138 [INFO] Zapisano zdarzenie #79 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:30,139 [INFO] [Fake FTP] Dane od 172.19.0.1: USER test
+2026-01-15 09:37:30,687 [INFO] Zapisano zdarzenie #80 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:30,689 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin123
+2026-01-15 09:37:31,212 [INFO] Zapisano zdarzenie #81 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:31,710 [INFO] [+] Połączenie z 172.19.0.1:42066 na porcie 2222 (SSH)
+2026-01-15 09:37:31,711 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 09:37:32,159 [INFO] Zapisano zdarzenie #82 w DB: Fake SSH od 172.19.0.1
+2026-01-15 09:37:32,159 [INFO] [Fake SSH] Dane od 172.19.0.1: support
+toor
+2026-01-15 09:37:32,542 [INFO] [+] Połączenie z 172.19.0.1:49192 na porcie 8080 (HTTP)
+2026-01-15 09:37:32,562 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /wp-admin HTTP/1.1
+2026-01-15 09:37:32,610 [INFO] Zapisano zdarzenie #83 w DB: Fake SSH od 172.19.0.1
+2026-01-15 09:37:33,119 [INFO] Zapisano zdarzenie #84 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:37:33,549 [INFO] [+] Połączenie z 172.19.0.1:49198 na porcie 8080 (HTTP)
+2026-01-15 09:37:33,549 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-15 09:37:34,115 [INFO] Zapisano zdarzenie #85 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:37:34,515 [INFO] [+] Połączenie z 172.19.0.1:39642 na porcie 2121 (FTP)
+2026-01-15 09:37:34,515 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:37:34,857 [INFO] Zapisano zdarzenie #86 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:34,857 [INFO] [Fake FTP] Dane od 172.19.0.1: USER root
+2026-01-15 09:37:35,233 [INFO] Zapisano zdarzenie #87 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:35,235 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS toor
+2026-01-15 09:37:35,579 [INFO] Zapisano zdarzenie #88 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:36,524 [INFO] [+] Połączenie z 172.19.0.1:39644 na porcie 2121 (FTP)
+2026-01-15 09:37:36,525 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:37:37,061 [INFO] Zapisano zdarzenie #89 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:37,061 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 09:37:37,712 [INFO] Zapisano zdarzenie #90 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:37,714 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS ftp
+2026-01-15 09:37:38,244 [INFO] Zapisano zdarzenie #91 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:38,904 [INFO] [+] Połączenie z 172.19.0.1:59008 na porcie 8080 (HTTP)
+2026-01-15 09:37:38,906 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /login HTTP/1.1
+2026-01-15 09:37:39,448 [INFO] Zapisano zdarzenie #92 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:37:39,861 [INFO] [+] Połączenie z 172.19.0.1:39646 na porcie 2121 (FTP)
+2026-01-15 09:37:39,863 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:37:40,353 [INFO] Zapisano zdarzenie #93 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:40,353 [INFO] [Fake FTP] Dane od 172.19.0.1: USER oracle
+2026-01-15 09:37:43,475 [INFO] [+] Połączenie z 172.19.0.1:39656 na porcie 2121 (FTP)
+2026-01-15 09:37:43,475 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:37:43,567 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:37:43,634 [INFO] Zapisano zdarzenie #94 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:46,769 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:37:46,856 [INFO] Zapisano zdarzenie #95 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:46,857 [INFO] [Fake FTP] Dane od 172.19.0.1: USER test
+2026-01-15 09:37:47,303 [INFO] [+] Połączenie z 172.19.0.1:46868 na porcie 2323 (TELNET)
+2026-01-15 09:37:47,304 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 09:37:50,071 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:37:50,165 [INFO] Zapisano zdarzenie #96 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:37:50,557 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:37:50,667 [INFO] Zapisano zdarzenie #97 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:37:50,668 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: anonymous
+2026-01-15 09:37:53,841 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:37:53,923 [INFO] Zapisano zdarzenie #98 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:37:53,923 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: letmein
+2026-01-15 09:37:57,074 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:37:57,207 [INFO] Zapisano zdarzenie #99 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:37:58,008 [INFO] [+] Połączenie z 172.19.0.1:56122 na porcie 2121 (FTP)
+2026-01-15 09:37:58,009 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:38:01,448 [INFO] [+] Połączenie z 172.19.0.1:48886 na porcie 8080 (HTTP)
+2026-01-15 09:38:01,464 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-15 09:38:01,466 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:38:01,537 [INFO] Zapisano zdarzenie #100 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:38:01,537 [INFO] [Fake FTP] Dane od 172.19.0.1: USER user
+2026-01-15 09:38:04,735 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:38:04,735 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:38:04,800 [INFO] Zapisano zdarzenie #101 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:38:04,832 [INFO] Zapisano zdarzenie #102 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:38:05,796 [INFO] [+] Połączenie z 172.19.0.1:59086 na porcie 2121 (FTP)
+2026-01-15 09:38:05,797 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:38:08,961 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:38:09,029 [INFO] Zapisano zdarzenie #103 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:38:09,029 [INFO] [Fake FTP] Dane od 172.19.0.1: USER anonymous
+2026-01-15 09:38:09,184 [INFO] [+] Połączenie z 172.19.0.1:59100 na porcie 2121 (FTP)
+2026-01-15 09:38:09,185 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 09:38:12,182 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:38:12,248 [INFO] Zapisano zdarzenie #104 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:38:12,426 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:38:12,481 [INFO] Zapisano zdarzenie #105 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:38:12,482 [INFO] [Fake FTP] Dane od 172.19.0.1: USER oracle
+2026-01-15 09:38:13,038 [INFO] [+] Połączenie z 172.19.0.1:36558 na porcie 8080 (HTTP)
+2026-01-15 09:38:13,039 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /login HTTP/1.1
+2026-01-15 09:38:15,821 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:38:15,966 [INFO] Zapisano zdarzenie #106 w DB: Fake FTP od 172.19.0.1
+2026-01-15 09:38:16,338 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 09:38:16,462 [INFO] Zapisano zdarzenie #107 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:38:16,744 [INFO] [+] Połączenie z 172.19.0.1:60130 na porcie 2222 (SSH)
+2026-01-15 09:38:16,746 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 09:38:17,697 [INFO] [+] Połączenie z 172.19.0.1:60134 na porcie 2222 (SSH)
+2026-01-15 09:38:17,698 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 09:38:18,519 [INFO] [+] Połączenie z 172.19.0.1:45798 na porcie 8080 (HTTP)
+2026-01-15 09:38:18,520 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /admin HTTP/1.1
+2026-01-15 09:38:18,982 [INFO] Zapisano zdarzenie #108 w DB: Fake SSH od 172.19.0.1
+2026-01-15 09:38:18,983 [INFO] [Fake SSH] Dane od 172.19.0.1: ftp
+password
+2026-01-15 09:38:19,008 [INFO] Zapisano zdarzenie #109 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:38:19,320 [INFO] Zapisano zdarzenie #110 w DB: Fake SSH od 172.19.0.1
+2026-01-15 09:38:19,321 [INFO] [Fake SSH] Dane od 172.19.0.1: support
+admin123
+2026-01-15 09:38:19,751 [INFO] Zapisano zdarzenie #111 w DB: Fake SSH od 172.19.0.1
+2026-01-15 09:38:19,792 [INFO] [+] Połączenie z 172.19.0.1:37734 na porcie 2323 (TELNET)
+2026-01-15 09:38:19,793 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 09:38:19,825 [INFO] Zapisano zdarzenie #112 w DB: Fake SSH od 172.19.0.1
+2026-01-15 09:38:20,303 [INFO] Zapisano zdarzenie #113 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:20,303 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: user
+2026-01-15 09:38:20,869 [INFO] Zapisano zdarzenie #114 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:20,874 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: 123456
+2026-01-15 09:38:21,282 [INFO] Zapisano zdarzenie #115 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:22,566 [INFO] [+] Połączenie z 172.19.0.1:37738 na porcie 2323 (TELNET)
+2026-01-15 09:38:22,568 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 09:38:23,287 [INFO] Zapisano zdarzenie #116 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:23,287 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: support
+2026-01-15 09:38:23,861 [INFO] Zapisano zdarzenie #117 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:23,862 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: letmein
+2026-01-15 09:38:24,468 [INFO] Zapisano zdarzenie #118 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:25,436 [INFO] [+] Połączenie z 172.19.0.1:47656 na porcie 8080 (HTTP)
+2026-01-15 09:38:25,438 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /admin HTTP/1.1
+2026-01-15 09:38:25,948 [INFO] Zapisano zdarzenie #119 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 09:38:26,401 [INFO] [+] Połączenie z 172.19.0.1:53030 na porcie 2323 (TELNET)
+2026-01-15 09:38:26,402 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 09:38:26,893 [INFO] Zapisano zdarzenie #120 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:26,894 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: admin
+2026-01-15 09:38:27,450 [INFO] Zapisano zdarzenie #121 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:27,453 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: toor
+2026-01-15 09:38:27,977 [INFO] Zapisano zdarzenie #122 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 09:38:28,712 [INFO] [+] Połączenie z 172.19.0.1:47668 na porcie 8080 (HTTP)
+2026-01-15 09:38:28,725 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /admin HTTP/1.1
+2026-01-15 09:38:29,190 [INFO] Zapisano zdarzenie #123 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:01:20,163 [INFO] [+] Połączenie z 172.19.0.1:38288 na porcie 2121 (FTP)
+2026-01-15 10:01:20,164 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:01:20,756 [INFO] Zapisano zdarzenie #124 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:01:20,757 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:01:21,320 [INFO] Zapisano zdarzenie #125 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:01:21,322 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:01:21,825 [INFO] Zapisano zdarzenie #126 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:01:30,538 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:01:31,229 [INFO] Zapisano zdarzenie #127 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:01:31,230 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS haslo123
+2026-01-15 10:01:31,908 [INFO] Zapisano zdarzenie #128 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:02:37,148 [INFO] [+] Połączenie z 172.19.0.1:54874 na porcie 2121 (FTP)
+2026-01-15 10:02:37,149 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:02:37,739 [INFO] Zapisano zdarzenie #129 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:02:37,739 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:02:38,253 [INFO] Zapisano zdarzenie #130 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:02:38,255 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:02:38,693 [INFO] Zapisano zdarzenie #131 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:02:38,699 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:02:39,208 [INFO] Zapisano zdarzenie #132 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:02:39,209 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS testowanie
+2026-01-15 10:02:39,885 [INFO] Zapisano zdarzenie #133 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:04:54,432 [INFO] [+] Połączenie z 172.19.0.1:45230 na porcie 2222 (SSH)
+2026-01-15 10:04:54,434 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 10:04:55,051 [INFO] Zapisano zdarzenie #134 w DB: Fake SSH od 172.19.0.1
+2026-01-15 10:04:55,052 [INFO] [Fake SSH] Dane od 172.19.0.1: SSH-2.0-PuTTY_Release_0.83
+  	Gqc2\PL0  Qsntrup761x25519-sha512,sntrup761x25519-sha512@openssh.com,mlkem768x25519-sha256,mlkem1024nistp384-sha384,mlkem768nistp256-sha256,curve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,rsa2048-sha256,rsa1024-sha1,diffie-hellman-group1-sha1,ext-info-c,kex-strict-c-v00@openssh.com   {ssh-ed448,ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,rsa-sha2-512,rsa-sha2-256,ssh-rsa,ssh-dss   aes256-ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,3des-ctr,3des-cbc,blowfish-ctr,blowfish-cbc,arcfour256,arcfour128   aes256-
+2026-01-15 10:04:55,536 [INFO] Zapisano zdarzenie #135 w DB: Fake SSH od 172.19.0.1
+2026-01-15 10:04:55,536 [INFO] [Fake SSH] Dane od 172.19.0.1: ctr,aes256-cbc,rijndael-cbc@lysator.liu.se,aes192-ctr,aes192-cbc,aes128-ctr,aes128-cbc,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,3des-ctr,3des-cbc,blowfish-ctr,blowfish-cbc,arcfour256,arcfour128   hmac-sha2-256,hmac-sha2-512,hmac-sha1,hmac-sha1-96,hmac-md5,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-etm@openssh.com   hmac-sha2-256,hmac-sha2-512,hmac-sha1,hmac-sha1-96,hmac-md5,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-etm@openssh.com   none,zlib,zlib@openssh.com   none,zlib,zlib@openssh.com             2D[k&
+2026-01-15 10:04:56,131 [INFO] Zapisano zdarzenie #136 w DB: Fake SSH od 172.19.0.1
+2026-01-15 10:07:26,045 [INFO] [+] Połączenie z 172.19.0.1:55278 na porcie 2121 (FTP)
+2026-01-15 10:07:26,046 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:07:26,536 [INFO] Zapisano zdarzenie #137 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:07:26,536 [INFO] [Fake FTP] Dane od 172.19.0.1: '
+2026-01-15 10:07:27,003 [INFO] Zapisano zdarzenie #138 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:07:33,074 [INFO] [Fake FTP] Dane od 172.19.0.1: ls
+2026-01-15 10:07:33,748 [INFO] Zapisano zdarzenie #139 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:07:37,195 [INFO] [Fake FTP] Dane od 172.19.0.1: pwd
+2026-01-15 10:07:37,714 [INFO] Zapisano zdarzenie #140 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:08:21,484 [INFO] [Fake FTP] Dane od 172.19.0.1: /
+2026-01-15 10:08:22,122 [INFO] Zapisano zdarzenie #141 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:08:26,156 [INFO] [Fake FTP] Dane od 172.19.0.1: cd
+2026-01-15 10:08:26,763 [INFO] Zapisano zdarzenie #142 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:08:30,785 [INFO] [Fake FTP] Dane od 172.19.0.1: pwd
+2026-01-15 10:08:31,410 [INFO] Zapisano zdarzenie #143 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:09:00,565 [INFO] [Fake FTP] Dane od 172.19.0.1: ls
+2026-01-15 10:09:01,189 [INFO] Zapisano zdarzenie #144 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:14:46,030 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 10:14:46,031 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 10:14:46,036 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 10:14:46,036 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 10:14:46,037 [INFO] Environment: Docker
+2026-01-15 10:14:46,037 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 10:14:46,038 [INFO] Threat Intelligence: Enabled
+2026-01-15 10:14:46,039 [INFO] ==================================================
+2026-01-15 10:14:46,040 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 10:14:46,040 [INFO] ==================================================
+2026-01-15 10:14:46,043 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 10:14:46,043 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 10:14:46,043 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 10:14:46,045 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 10:14:46,045 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 10:14:46,045 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 10:14:46,045 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 10:14:46,047 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 10:14:46,049 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 10:14:58,167 [INFO] [+] Połączenie z 172.19.0.1:52012 na porcie 2121 (FTP)
+2026-01-15 10:14:58,169 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:14:58,812 [INFO] Zapisano zdarzenie #145 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:14:58,813 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:14:59,246 [INFO] Zapisano zdarzenie #146 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:14:59,250 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:14:59,816 [INFO] Zapisano zdarzenie #147 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:14:59,819 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:15:00,479 [INFO] Zapisano zdarzenie #148 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:00,482 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS testowanie
+2026-01-15 10:15:01,015 [INFO] Zapisano zdarzenie #149 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:06,491 [INFO] [+] Połączenie z 172.19.0.1:52018 na porcie 2121 (FTP)
+2026-01-15 10:15:06,492 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:15:07,212 [INFO] Zapisano zdarzenie #150 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:07,212 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:15:07,685 [INFO] Zapisano zdarzenie #151 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:07,686 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:15:08,184 [INFO] Zapisano zdarzenie #152 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:08,190 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:15:08,669 [INFO] Zapisano zdarzenie #153 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:08,674 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 10:15:09,182 [INFO] Zapisano zdarzenie #154 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:09,187 [INFO] [Fake FTP] Dane od 172.19.0.1: FEAT
+2026-01-15 10:15:09,796 [INFO] Zapisano zdarzenie #155 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:09,811 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 10:15:10,340 [INFO] Zapisano zdarzenie #156 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:43,827 [INFO] [+] Połączenie z 172.19.0.1:37872 na porcie 2121 (FTP)
+2026-01-15 10:15:43,828 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:15:44,411 [INFO] Zapisano zdarzenie #157 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:44,412 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:15:44,893 [INFO] Zapisano zdarzenie #158 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:44,895 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:15:45,366 [INFO] Zapisano zdarzenie #159 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:50,427 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:15:51,165 [INFO] Zapisano zdarzenie #160 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:51,167 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 10:15:51,668 [INFO] Zapisano zdarzenie #161 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:51,671 [INFO] [Fake FTP] Dane od 172.19.0.1: FEAT
+2026-01-15 10:15:52,262 [INFO] Zapisano zdarzenie #162 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:15:52,271 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 10:15:52,825 [INFO] Zapisano zdarzenie #163 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:16:12,919 [INFO] [+] Połączenie z 172.19.0.1:42752 na porcie 2121 (FTP)
+2026-01-15 10:16:12,921 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:16:13,511 [INFO] Zapisano zdarzenie #164 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:16:13,511 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:16:14,008 [INFO] Zapisano zdarzenie #165 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:16:14,010 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:16:14,411 [INFO] Zapisano zdarzenie #166 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:16:14,416 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:16:14,738 [INFO] Zapisano zdarzenie #167 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:16:14,740 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 10:16:15,063 [INFO] Zapisano zdarzenie #168 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:16:15,071 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 10:16:15,403 [INFO] Zapisano zdarzenie #169 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:16:35,538 [INFO] [+] Połączenie z 172.19.0.1:36498 na porcie 2121 (FTP)
+2026-01-15 10:16:35,539 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:16:36,388 [INFO] Zapisano zdarzenie #170 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:16:36,389 [INFO] [Fake FTP] Dane od 172.19.0.1: SSH-2.0-PuTTY_Release_0.83
+2026-01-15 10:16:36,963 [INFO] Zapisano zdarzenie #171 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:19:09,548 [INFO] [+] Połączenie z 172.19.0.1:33710 na porcie 2121 (FTP)
+2026-01-15 10:19:09,550 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:19:10,209 [INFO] Zapisano zdarzenie #172 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:19:10,210 [INFO] [Fake FTP] Dane od 172.19.0.1: SSH-2.0-PuTTY_Release_0.83
+2026-01-15 10:19:10,811 [INFO] Zapisano zdarzenie #173 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:20:01,207 [INFO] [+] Połączenie z 172.19.0.1:53880 na porcie 2121 (FTP)
+2026-01-15 10:20:01,208 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:20:01,787 [INFO] Zapisano zdarzenie #174 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:20:01,787 [INFO] [Fake FTP] Dane od 172.19.0.1: '
+2026-01-15 10:20:02,207 [INFO] Zapisano zdarzenie #175 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:20:08,090 [INFO] [Fake FTP] Dane od 172.19.0.1: ls
+2026-01-15 10:20:08,733 [INFO] Zapisano zdarzenie #176 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:20:34,082 [INFO] [+] Połączenie z 172.19.0.1:33184 na porcie 2323 (TELNET)
+2026-01-15 10:20:34,083 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 10:20:34,681 [INFO] Zapisano zdarzenie #177 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 10:20:34,682 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: '
+2026-01-15 10:20:35,080 [INFO] Zapisano zdarzenie #178 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 10:20:36,076 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin
+2026-01-15 10:20:36,596 [INFO] Zapisano zdarzenie #179 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 10:20:37,926 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: admin
+2026-01-15 10:20:38,445 [INFO] Zapisano zdarzenie #180 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 10:20:39,637 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin
+2026-01-15 10:20:40,239 [INFO] Zapisano zdarzenie #181 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 10:20:46,019 [INFO] [Fake Telnet] Dane od 172.19.0.1: SHELL: ls
+2026-01-15 10:20:46,679 [INFO] Zapisano zdarzenie #182 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 10:20:48,881 [INFO] [Fake Telnet] Dane od 172.19.0.1: SHELL: cd
+2026-01-15 10:20:49,483 [INFO] Zapisano zdarzenie #183 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 10:20:53,220 [INFO] [Fake Telnet] Dane od 172.19.0.1: SHELL: cd Downloads
+2026-01-15 10:20:53,845 [INFO] Zapisano zdarzenie #184 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 10:21:06,741 [INFO] [+] Połączenie z 172.19.0.1:58026 na porcie 2121 (FTP)
+2026-01-15 10:21:06,742 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:21:07,406 [INFO] Zapisano zdarzenie #185 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:07,407 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:21:07,947 [INFO] Zapisano zdarzenie #186 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:07,949 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:21:08,412 [INFO] Zapisano zdarzenie #187 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:08,416 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:21:08,897 [INFO] Zapisano zdarzenie #188 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:08,899 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 10:21:09,282 [INFO] Zapisano zdarzenie #189 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:09,288 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 10:21:09,759 [INFO] Zapisano zdarzenie #190 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:29,761 [INFO] [+] Połączenie z 172.19.0.1:45550 na porcie 2121 (FTP)
+2026-01-15 10:21:29,762 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:21:30,308 [INFO] Zapisano zdarzenie #191 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:30,308 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:21:30,861 [INFO] Zapisano zdarzenie #192 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:30,862 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:21:31,274 [INFO] Zapisano zdarzenie #193 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:31,277 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:21:31,657 [INFO] Zapisano zdarzenie #194 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:31,659 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 10:21:32,271 [INFO] Zapisano zdarzenie #195 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:32,280 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 10:21:32,713 [INFO] Zapisano zdarzenie #196 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:21:41,349 [INFO] [+] Połączenie z 172.19.0.1:49746 na porcie 8080 (HTTP)
+2026-01-15 10:21:41,350 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 10:21:41,351 [INFO] [+] Połączenie z 172.19.0.1:49748 na porcie 8080 (HTTP)
+2026-01-15 10:21:41,968 [INFO] Zapisano zdarzenie #197 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:21:42,204 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 10:21:42,631 [INFO] Zapisano zdarzenie #198 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:23:55,540 [INFO] [+] Połączenie z 172.19.0.1:53168 na porcie 8080 (HTTP)
+2026-01-15 10:23:55,542 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /admin HTTP/1.1
+2026-01-15 10:23:55,542 [INFO] [+] Połączenie z 172.19.0.1:53172 na porcie 8080 (HTTP)
+2026-01-15 10:23:56,198 [INFO] Zapisano zdarzenie #199 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:23:56,374 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 10:23:56,853 [INFO] Zapisano zdarzenie #200 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:24:50,959 [INFO] [+] Połączenie z 172.19.0.1:50410 na porcie 8080 (HTTP)
+2026-01-15 10:24:50,961 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /adminhttp://localhost:8080/index.php?id=1%27%20OR%20%271%27=%271 HTTP/1.1
+2026-01-15 10:24:50,964 [INFO] [+] Połączenie z 172.19.0.1:50412 na porcie 8080 (HTTP)
+2026-01-15 10:24:51,519 [INFO] Zapisano zdarzenie #201 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:24:51,684 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 10:24:52,161 [INFO] Zapisano zdarzenie #202 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:24:54,042 [INFO] [+] Połączenie z 172.19.0.1:37530 na porcie 8080 (HTTP)
+2026-01-15 10:24:54,043 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /index.php?id=1%27%20OR%20%271%27=%271 HTTP/1.1
+2026-01-15 10:24:54,045 [INFO] [+] Połączenie z 172.19.0.1:37542 na porcie 8080 (HTTP)
+2026-01-15 10:24:54,551 [INFO] Zapisano zdarzenie #203 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:24:54,602 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 10:24:55,234 [INFO] Zapisano zdarzenie #204 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:25:34,078 [INFO] [+] Połączenie z 172.19.0.1:41178 na porcie 2222 (SSH)
+2026-01-15 10:25:34,079 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 10:25:34,482 [INFO] Zapisano zdarzenie #205 w DB: Fake SSH od 172.19.0.1
+2026-01-15 10:28:21,659 [INFO] [+] Połączenie z 172.19.0.1:53178 na porcie 2525 (SMTP)
+2026-01-15 10:28:21,660 [INFO] [Fake SMTP] Dane od 172.19.0.1: SMTP_CONNECTION
+2026-01-15 10:28:22,141 [INFO] Zapisano zdarzenie #206 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:28:22,141 [INFO] [Fake SMTP] Dane od 172.19.0.1: '
+2026-01-15 10:28:22,706 [INFO] Zapisano zdarzenie #207 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:28:32,347 [INFO] [Fake SMTP] Dane od 172.19.0.1: HELO haker.com
+2026-01-15 10:28:32,946 [INFO] Zapisano zdarzenie #208 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:28:48,669 [INFO] [Fake SMTP] Dane od 172.19.0.1: DATA
+2026-01-15 10:28:49,278 [INFO] Zapisano zdarzenie #209 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:30:17,554 [INFO] [Fake SMTP] Dane od 172.19.0.1: HELO
+2026-01-15 10:30:18,137 [INFO] Zapisano zdarzenie #210 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:30:26,997 [INFO] [Fake SMTP] Dane od 172.19.0.1: MAIL FROM
+2026-01-15 10:30:27,639 [INFO] Zapisano zdarzenie #211 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:30:31,373 [INFO] [Fake SMTP] Dane od 172.19.0.1: RCPT TO
+2026-01-15 10:30:31,919 [INFO] Zapisano zdarzenie #212 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:31:01,001 [INFO] [Fake SMTP] Dane od 172.19.0.1: DATA
+2026-01-15 10:31:01,580 [INFO] Zapisano zdarzenie #213 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:33:38,766 [INFO] [+] Połączenie z 172.19.0.1:48404 na porcie 2525 (SMTP)
+2026-01-15 10:33:38,767 [INFO] [Fake SMTP] Dane od 172.19.0.1: SMTP_CONNECTION
+2026-01-15 10:33:39,425 [INFO] Zapisano zdarzenie #214 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:33:39,426 [INFO] [Fake SMTP] Dane od 172.19.0.1: '
+2026-01-15 10:33:39,839 [INFO] Zapisano zdarzenie #215 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:33:46,249 [INFO] [Fake SMTP] Dane od 172.19.0.1: EHLO test.com
+2026-01-15 10:33:46,660 [INFO] Zapisano zdarzenie #216 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:34:10,654 [INFO] [Fake SMTP] Dane od 172.19.0.1: MAIL FROM: test@gmail.com
+2026-01-15 10:34:11,130 [INFO] Zapisano zdarzenie #217 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:34:26,824 [INFO] [Fake SMTP] Dane od 172.19.0.1: RCPT TO: prezes@gmail.com
+2026-01-15 10:34:27,526 [INFO] Zapisano zdarzenie #218 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:34:37,402 [INFO] [Fake SMTP] Dane od 172.19.0.1: DATA
+2026-01-15 10:34:38,018 [INFO] Zapisano zdarzenie #219 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:34:49,961 [INFO] [Fake SMTP] Dane od 172.19.0.1: FAKTURA VAT TEST.
+2026-01-15 10:34:50,612 [INFO] Zapisano zdarzenie #220 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:34:50,641 [INFO] [Fake SMTP] Dane od 172.19.0.1: .
+2026-01-15 10:34:51,148 [INFO] Zapisano zdarzenie #221 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:35:17,275 [INFO] [Fake SMTP] Dane od 172.19.0.1: DATA
+2026-01-15 10:35:17,891 [INFO] Zapisano zdarzenie #222 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:35:22,998 [INFO] [Fake SMTP] Dane od 172.19.0.1: test
+2026-01-15 10:35:23,589 [INFO] Zapisano zdarzenie #223 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:36:10,786 [INFO] [Fake SMTP] Dane od 172.19.0.1: DATA
+2026-01-15 10:36:11,477 [INFO] Zapisano zdarzenie #224 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:36:15,417 [INFO] [Fake SMTP] Dane od 172.19.0.1: testowy formularz costam
+2026-01-15 10:36:15,952 [INFO] Zapisano zdarzenie #225 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:36:36,777 [INFO] [+] Połączenie z 172.19.0.1:58032 na porcie 2525 (SMTP)
+2026-01-15 10:36:36,778 [INFO] [Fake SMTP] Dane od 172.19.0.1: SMTP_CONNECTION
+2026-01-15 10:36:37,471 [INFO] Zapisano zdarzenie #226 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:36:37,471 [INFO] [Fake SMTP] Dane od 172.19.0.1: '
+2026-01-15 10:36:38,082 [INFO] Zapisano zdarzenie #227 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:36:44,513 [INFO] [Fake SMTP] Dane od 172.19.0.1: HELO
+2026-01-15 10:36:45,178 [INFO] Zapisano zdarzenie #228 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:37:02,455 [INFO] [Fake SMTP] Dane od 172.19.0.1: MAIL FROM: spam.pl
+2026-01-15 10:37:03,046 [INFO] Zapisano zdarzenie #229 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:37:10,964 [INFO] [Fake SMTP] Dane od 172.19.0.1: rcpt to: prezes@
+2026-01-15 10:37:11,542 [INFO] Zapisano zdarzenie #230 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:37:20,492 [INFO] [Fake SMTP] Dane od 172.19.0.1: DATA
+2026-01-15 10:37:21,064 [INFO] Zapisano zdarzenie #231 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:37:35,115 [INFO] [Fake SMTP] Dane od 172.19.0.1: tresc maila.
+2026-01-15 10:37:35,694 [INFO] Zapisano zdarzenie #232 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:43:09,458 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 10:43:09,459 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 10:43:09,464 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 10:43:09,464 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 10:43:09,464 [INFO] Environment: Docker
+2026-01-15 10:43:09,465 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 10:43:09,465 [INFO] Threat Intelligence: Enabled
+2026-01-15 10:43:09,466 [INFO] ==================================================
+2026-01-15 10:43:09,466 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 10:43:09,467 [INFO] ==================================================
+2026-01-15 10:43:09,469 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 10:43:09,470 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 10:43:09,470 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 10:43:09,471 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 10:43:09,471 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 10:43:09,472 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 10:43:09,472 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 10:43:09,473 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 10:43:09,474 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 10:43:09,545 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 10:43:09,546 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 10:43:09,553 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 10:43:09,554 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 10:43:09,554 [INFO] Environment: Docker
+2026-01-15 10:43:09,555 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 10:43:09,555 [INFO] Threat Intelligence: Enabled
+2026-01-15 10:43:09,556 [INFO] ==================================================
+2026-01-15 10:43:09,556 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 10:43:09,557 [INFO] ==================================================
+2026-01-15 10:43:09,560 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 10:43:09,561 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 10:43:09,561 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 10:43:09,561 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 10:43:09,562 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 10:43:09,562 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 10:43:09,562 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 10:43:09,565 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 10:43:09,566 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 10:43:37,651 [INFO] [+] Połączenie z 172.19.0.1:33336 na porcie 2525 (SMTP)
+2026-01-15 10:43:37,652 [INFO] [Fake SMTP] Dane od 172.19.0.1: SMTP_CONNECTION
+2026-01-15 10:43:38,390 [INFO] Zapisano zdarzenie #233 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:43:38,390 [INFO] [Fake SMTP] Dane od 172.19.0.1: '
+2026-01-15 10:43:38,917 [INFO] Zapisano zdarzenie #234 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:43:41,473 [INFO] [Fake SMTP] Dane od 172.19.0.1: HELO
+2026-01-15 10:43:42,038 [INFO] Zapisano zdarzenie #235 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:43:44,300 [INFO] [Fake SMTP] Dane od 172.19.0.1: DATA
+2026-01-15 10:43:44,810 [INFO] Zapisano zdarzenie #236 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:43:47,034 [INFO] [Fake SMTP] Dane od 172.19.0.1: 123fdasf
+2026-01-15 10:43:47,548 [INFO] Zapisano zdarzenie #237 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:43:49,421 [INFO] [Fake SMTP] Dane od 172.19.0.1: fadsfkmsf
+2026-01-15 10:43:50,092 [INFO] Zapisano zdarzenie #238 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:43:50,257 [INFO] [Fake SMTP] Dane od 172.19.0.1: .
+2026-01-15 10:43:50,718 [INFO] Zapisano zdarzenie #239 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 10:43:59,962 [INFO] [+] Połączenie z 172.19.0.1:53890 na porcie 2121 (FTP)
+2026-01-15 10:43:59,965 [INFO] [+] Połączenie z 172.19.0.1:53898 na porcie 2121 (FTP)
+2026-01-15 10:43:59,966 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:43:59,968 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:44:00,547 [INFO] Zapisano zdarzenie #240 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:00,548 [INFO] [Fake FTP] Dane od 172.19.0.1: GET / HTTP/1.1
+Host: localhost:2122
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: Pycharm-d26b2edb=5b3456e9-76be-4d1c-94d0-8bdd33b72acc; ajs_anonymous_id=bc31fe1f-fb74-4b32-aa5f-4101bf85ca0d; _streamlit_xsrf=2|be3844c1|eda77f1abf0262606b237ee9c5d42186|1768469780
+2026-01-15 10:44:00,343 [INFO] Zapisano zdarzenie #241 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:00,773 [INFO] Zapisano zdarzenie #242 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:00,797 [INFO] [Fake FTP] Dane od 172.19.0.1: GET / HTTP/1.1
+Host: localhost:2122
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: Pycharm-d26b2edb=5b3456e9-76be-4d1c-94d0-8bdd33b72acc; ajs_anonymous_id=bc31fe1f-fb74-4b32-aa5f-4101bf85ca0d; _streamlit_xsrf=2|be3844c1|eda77f1abf0262606b237ee9c5d42186|1768469780
+2026-01-15 10:44:00,802 [INFO] [+] Połączenie z 172.19.0.1:53908 na porcie 2121 (FTP)
+2026-01-15 10:44:00,804 [INFO] [+] Połączenie z 172.19.0.1:53912 na porcie 2121 (FTP)
+2026-01-15 10:44:00,806 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:44:00,812 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:44:01,155 [INFO] Zapisano zdarzenie #243 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:01,363 [INFO] Zapisano zdarzenie #244 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:01,386 [INFO] Zapisano zdarzenie #245 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:18,569 [INFO] [+] Połączenie z 172.19.0.1:33230 na porcie 8080 (HTTP)
+2026-01-15 10:44:18,571 [INFO] [+] Połączenie z 172.19.0.1:33232 na porcie 8080 (HTTP)
+2026-01-15 10:44:18,603 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 10:44:19,174 [INFO] Zapisano zdarzenie #246 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:44:19,441 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 10:44:19,979 [INFO] Zapisano zdarzenie #247 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:44:21,417 [INFO] [+] Połączenie z 172.19.0.1:51036 na porcie 8080 (HTTP)
+2026-01-15 10:44:21,419 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 10:44:21,421 [INFO] [+] Połączenie z 172.19.0.1:51046 na porcie 8080 (HTTP)
+2026-01-15 10:44:21,872 [INFO] Zapisano zdarzenie #248 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:44:21,926 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 10:44:22,466 [INFO] Zapisano zdarzenie #249 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 10:44:46,951 [INFO] [+] Połączenie z 172.19.0.1:45928 na porcie 2121 (FTP)
+2026-01-15 10:44:46,953 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:44:47,588 [INFO] Zapisano zdarzenie #250 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:47,589 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:44:48,137 [INFO] Zapisano zdarzenie #251 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:48,140 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:44:48,814 [INFO] Zapisano zdarzenie #252 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:48,817 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:44:49,303 [INFO] Zapisano zdarzenie #253 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:49,305 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 10:44:49,690 [INFO] Zapisano zdarzenie #254 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:44:49,697 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 10:44:50,183 [INFO] Zapisano zdarzenie #255 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:45:10,146 [INFO] [+] Połączenie z 172.19.0.1:44828 na porcie 2121 (FTP)
+2026-01-15 10:45:10,148 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 10:45:10,752 [INFO] Zapisano zdarzenie #256 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:45:10,752 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 10:45:11,160 [INFO] Zapisano zdarzenie #257 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:45:11,163 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 10:45:11,626 [INFO] Zapisano zdarzenie #258 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:45:11,632 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 10:45:12,165 [INFO] Zapisano zdarzenie #259 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:45:12,167 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 10:45:12,706 [INFO] Zapisano zdarzenie #260 w DB: Fake FTP od 172.19.0.1
+2026-01-15 10:45:12,714 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 10:45:13,134 [INFO] Zapisano zdarzenie #261 w DB: Fake FTP od 172.19.0.1
+2026-01-15 11:01:42,330 [INFO] [+] Połączenie z 172.19.0.1:37558 na porcie 2121 (FTP)
+2026-01-15 11:01:42,332 [INFO] [+] Połączenie z 172.19.0.1:37572 na porcie 2121 (FTP)
+2026-01-15 11:01:42,332 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 11:01:42,340 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 11:01:42,936 [INFO] Zapisano zdarzenie #262 w DB: Fake FTP od 172.19.0.1
+2026-01-15 11:01:42,936 [INFO] [Fake FTP] Dane od 172.19.0.1: GET / HTTP/1.1
+Host: localhost:2122
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: Pycharm-d26b2edb=5b3456e9-76be-4d1c-94d0-8bdd33b72acc; ajs_anonymous_id=bc31fe1f-fb74-4b32-aa5f-4101bf85ca0d; _streamlit_xsrf=2|be3844c1|eda77f1abf0262606b237ee9c5d42186|1768469780
+2026-01-15 11:01:43,016 [INFO] Zapisano zdarzenie #263 w DB: Fake FTP od 172.19.0.1
+2026-01-15 11:01:43,350 [INFO] Zapisano zdarzenie #264 w DB: Fake FTP od 172.19.0.1
+2026-01-15 11:01:43,392 [INFO] [Fake FTP] Dane od 172.19.0.1: GET / HTTP/1.1
+Host: localhost:2122
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: Pycharm-d26b2edb=5b3456e9-76be-4d1c-94d0-8bdd33b72acc; ajs_anonymous_id=bc31fe1f-fb74-4b32-aa5f-4101bf85ca0d; _streamlit_xsrf=2|be3844c1|eda77f1abf0262606b237ee9c5d42186|1768469780
+2026-01-15 11:01:43,397 [INFO] [+] Połączenie z 172.19.0.1:37586 na porcie 2121 (FTP)
+2026-01-15 11:01:43,399 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 11:01:43,399 [INFO] [+] Połączenie z 172.19.0.1:37602 na porcie 2121 (FTP)
+2026-01-15 11:01:43,403 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 11:01:44,094 [INFO] Zapisano zdarzenie #265 w DB: Fake FTP od 172.19.0.1
+2026-01-15 11:01:44,114 [INFO] Zapisano zdarzenie #266 w DB: Fake FTP od 172.19.0.1
+2026-01-15 11:01:44,148 [INFO] Zapisano zdarzenie #267 w DB: Fake FTP od 172.19.0.1
+2026-01-15 11:01:48,492 [INFO] [Fake FTP] Dane od 172.19.0.1: GET / HTTP/1.1
+Host: localhost:2122
+Connection: keep-alive
+Cache-Control: max-age=0
+sec-ch-ua: "Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: Pycharm-d26b2edb=5b3456e9-76be-4d1c-94d0-8bdd33b72acc; ajs_anonymous_id=bc31fe1f-fb74-4b32-aa5f-4101bf85ca0d; _streamlit_xsrf=2|be3844c1|eda77f1abf0262606b237ee9c5d42186|1768469780
+2026-01-15 11:01:49,148 [INFO] Zapisano zdarzenie #268 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:07:56,000 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 12:07:56,002 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 12:07:56,009 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 12:07:56,010 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 12:07:56,012 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 12:07:56,013 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 12:07:56,013 [INFO] Environment: Docker
+2026-01-15 12:07:56,013 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 12:07:56,014 [INFO] Threat Intelligence: Enabled
+2026-01-15 12:07:56,015 [INFO] ==================================================
+2026-01-15 12:07:56,015 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 12:07:56,015 [INFO] ==================================================
+2026-01-15 12:07:56,016 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 12:07:56,016 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 12:07:56,017 [INFO] Environment: Docker
+2026-01-15 12:07:56,017 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 12:07:56,018 [INFO] Threat Intelligence: Enabled
+2026-01-15 12:07:56,018 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 12:07:56,018 [INFO] ==================================================
+2026-01-15 12:07:56,019 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 12:07:56,019 [INFO] ==================================================
+2026-01-15 12:07:56,019 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 12:07:56,019 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 12:07:56,020 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 12:07:56,020 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 12:07:56,021 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 12:07:56,022 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 12:07:56,021 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 12:07:56,022 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 12:07:56,023 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 12:07:56,023 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 12:07:56,023 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 12:07:56,024 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 12:07:56,025 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 12:07:56,025 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 12:07:56,025 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 12:07:56,027 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 12:07:56,028 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 12:09:31,933 [INFO] [+] Połączenie z 172.19.0.1:43074 na porcie 2525 (SMTP)
+2026-01-15 12:09:31,936 [INFO] [Fake SMTP] Dane od 172.19.0.1: SMTP_CONNECTION
+2026-01-15 12:09:32,377 [INFO] Zapisano zdarzenie #269 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:09:32,377 [INFO] [Fake SMTP] Dane od 172.19.0.1: '
+2026-01-15 12:09:32,845 [INFO] Zapisano zdarzenie #270 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:09:33,705 [INFO] [Fake SMTP] Dane od 172.19.0.1: helo
+2026-01-15 12:09:34,357 [INFO] Zapisano zdarzenie #271 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:10:03,320 [INFO] [Fake SMTP] Dane od 172.19.0.1: MAIL
+2026-01-15 12:10:03,952 [INFO] Zapisano zdarzenie #272 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:10:05,855 [INFO] [Fake SMTP] Dane od 172.19.0.1: f
+2026-01-15 12:10:06,378 [INFO] Zapisano zdarzenie #273 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:15:49,946 [INFO] [Fake SMTP] Dane od 172.19.0.1: MAIL FROM gmail@com
+2026-01-15 12:15:50,591 [INFO] Zapisano zdarzenie #274 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:16:00,035 [INFO] [Fake SMTP] Dane od 172.19.0.1: RCPT TO: gmail@com
+2026-01-15 12:16:00,660 [INFO] Zapisano zdarzenie #275 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:16:03,145 [INFO] [Fake SMTP] Dane od 172.19.0.1: DATA
+2026-01-15 12:16:03,695 [INFO] Zapisano zdarzenie #276 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:16:06,112 [INFO] [Fake SMTP] Dane od 172.19.0.1: test
+2026-01-15 12:16:06,606 [INFO] Zapisano zdarzenie #277 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:16:07,320 [INFO] [Fake SMTP] Dane od 172.19.0.1: pracy
+2026-01-15 12:16:07,820 [INFO] Zapisano zdarzenie #278 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:16:09,950 [INFO] [Fake SMTP] Dane od 172.19.0.1: smtp
+2026-01-15 12:16:10,589 [INFO] Zapisano zdarzenie #279 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:16:11,457 [INFO] [Fake SMTP] Dane od 172.19.0.1: .
+2026-01-15 12:16:12,074 [INFO] Zapisano zdarzenie #280 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:16:17,062 [INFO] [Fake SMTP] Dane od 172.19.0.1: quit
+2026-01-15 12:16:17,698 [INFO] Zapisano zdarzenie #281 w DB: Fake SMTP od 172.19.0.1
+2026-01-15 12:16:51,154 [INFO] [+] Połączenie z 172.19.0.1:49224 na porcie 2121 (FTP)
+2026-01-15 12:16:51,155 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 12:16:51,677 [INFO] Zapisano zdarzenie #282 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:16:51,678 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 12:16:52,198 [INFO] Zapisano zdarzenie #283 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:16:52,200 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 12:16:52,685 [INFO] Zapisano zdarzenie #284 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:16:54,176 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 12:16:54,715 [INFO] Zapisano zdarzenie #285 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:16:54,717 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS 123
+2026-01-15 12:16:55,249 [INFO] Zapisano zdarzenie #286 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:00,696 [INFO] [+] Połączenie z 172.19.0.1:53796 na porcie 2121 (FTP)
+2026-01-15 12:17:00,697 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 12:17:01,389 [INFO] Zapisano zdarzenie #287 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:01,390 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 12:17:01,987 [INFO] Zapisano zdarzenie #288 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:01,989 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 12:17:02,692 [INFO] Zapisano zdarzenie #289 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:02,697 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 12:17:03,232 [INFO] Zapisano zdarzenie #290 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:03,233 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 12:17:03,646 [INFO] Zapisano zdarzenie #291 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:03,648 [INFO] [Fake FTP] Dane od 172.19.0.1: FEAT
+2026-01-15 12:17:04,165 [INFO] Zapisano zdarzenie #292 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:04,170 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 12:17:04,620 [INFO] Zapisano zdarzenie #293 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:24,837 [INFO] [+] Połączenie z 172.19.0.1:42296 na porcie 2121 (FTP)
+2026-01-15 12:17:24,839 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 12:17:25,395 [INFO] Zapisano zdarzenie #294 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:25,396 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 12:17:25,922 [INFO] Zapisano zdarzenie #295 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:25,924 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 12:17:26,745 [INFO] Zapisano zdarzenie #296 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:26,751 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 12:17:27,294 [INFO] Zapisano zdarzenie #297 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:27,296 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 12:17:27,812 [INFO] Zapisano zdarzenie #298 w DB: Fake FTP od 172.19.0.1
+2026-01-15 12:17:27,823 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 12:17:28,342 [INFO] Zapisano zdarzenie #299 w DB: Fake FTP od 172.19.0.1
+2026-01-15 13:00:44,644 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 13:00:44,646 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 13:00:44,651 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 13:00:44,652 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 13:00:44,652 [INFO] Environment: Docker
+2026-01-15 13:00:44,652 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 13:00:44,653 [INFO] Threat Intelligence: Enabled
+2026-01-15 13:00:44,653 [INFO] ==================================================
+2026-01-15 13:00:44,654 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 13:00:44,654 [INFO] ==================================================
+2026-01-15 13:00:44,657 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 13:00:44,657 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 13:00:44,657 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 13:00:44,658 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 13:00:44,658 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 13:00:44,658 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 13:00:44,659 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 13:00:44,660 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 13:00:44,662 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 13:02:03,509 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 13:02:03,510 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 13:02:03,513 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 13:02:03,514 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 13:02:03,514 [INFO] Environment: Docker
+2026-01-15 13:02:03,514 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 13:02:03,514 [INFO] Threat Intelligence: Enabled
+2026-01-15 13:02:03,514 [INFO] ==================================================
+2026-01-15 13:02:03,515 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 13:02:03,515 [INFO] ==================================================
+2026-01-15 13:02:03,517 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 13:02:03,517 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 13:02:03,517 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 13:02:03,518 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 13:02:03,518 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 13:02:03,518 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 13:02:03,518 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 13:02:03,519 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 13:02:03,519 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 13:06:02,309 [INFO] [+] Połączenie z 172.19.0.1:37800 na porcie 8080 (HTTP)
+2026-01-15 13:06:02,310 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 13:06:02,319 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Max retries exceeded with url: /json/172.19.0.1 (Caused by NameResolutionError("HTTPConnection(host='ip-api.com', port=80): Failed to resolve 'ip-api.com' ([Errno -2] Name or service not known)"))
+2026-01-15 13:06:02,448 [INFO] Zapisano zdarzenie #300 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 14:59:28,270 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 14:59:28,270 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 14:59:28,271 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 14:59:28,271 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 14:59:28,275 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 14:59:28,275 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 14:59:28,276 [INFO] Environment: Docker
+2026-01-15 14:59:28,276 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 14:59:28,276 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 14:59:28,276 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 14:59:28,276 [INFO] Threat Intelligence: Enabled
+2026-01-15 14:59:28,277 [INFO] Environment: Docker
+2026-01-15 14:59:28,277 [INFO] ==================================================
+2026-01-15 14:59:28,277 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 14:59:28,277 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 14:59:28,278 [INFO] ==================================================
+2026-01-15 14:59:28,278 [INFO] Threat Intelligence: Enabled
+2026-01-15 14:59:28,278 [INFO] ==================================================
+2026-01-15 14:59:28,279 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 14:59:28,279 [INFO] ==================================================
+2026-01-15 14:59:28,280 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 14:59:28,280 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 14:59:28,281 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 14:59:28,281 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 14:59:28,280 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 14:59:28,281 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 14:59:28,282 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 14:59:28,281 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 14:59:28,282 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 14:59:28,283 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 14:59:28,283 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 14:59:28,282 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 14:59:28,284 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 14:59:28,283 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 14:59:28,285 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 14:59:28,284 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 14:59:28,285 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 14:59:28,286 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 14:59:52,596 [INFO] [+] Połączenie z 172.19.0.1:49510 na porcie 2323 (TELNET)
+2026-01-15 14:59:52,597 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 14:59:54,297 [INFO] Zapisano zdarzenie #301 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 14:59:54,298 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: SSH-2.0-PuTTY_Release_0.83
+2026-01-15 14:59:54,915 [INFO] Zapisano zdarzenie #302 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:00:07,792 [INFO] [+] Połączenie z 172.19.0.1:49574 na porcie 8080 (HTTP)
+2026-01-15 15:00:08,044 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 15:00:09,594 [INFO] Zapisano zdarzenie #303 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:01:45,745 [INFO] [+] Połączenie z 172.19.0.1:57400 na porcie 2323 (TELNET)
+2026-01-15 15:01:45,746 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:01:46,603 [INFO] Zapisano zdarzenie #304 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:01:46,603 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: '
+2026-01-15 15:01:48,393 [INFO] Zapisano zdarzenie #305 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:01:50,630 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin
+2026-01-15 15:01:51,313 [INFO] Zapisano zdarzenie #306 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:01:53,594 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: admin
+2026-01-15 15:01:54,228 [INFO] Zapisano zdarzenie #307 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:01:55,443 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin
+2026-01-15 15:01:56,045 [INFO] Zapisano zdarzenie #308 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:02:57,105 [INFO] [+] Połączenie z 172.19.0.1:32938 na porcie 2323 (TELNET)
+2026-01-15 15:02:57,106 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:02:57,798 [INFO] Zapisano zdarzenie #309 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:02:57,799 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: '
+2026-01-15 15:02:58,370 [INFO] Zapisano zdarzenie #310 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:03:58,119 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: .
+2026-01-15 15:03:58,818 [INFO] Zapisano zdarzenie #311 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:04:00,041 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: admin
+2026-01-15 15:04:00,750 [INFO] Zapisano zdarzenie #312 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:04:17,515 [INFO] [+] Połączenie z 172.19.0.1:48722 na porcie 2323 (TELNET)
+2026-01-15 15:04:17,517 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:04:18,379 [INFO] Zapisano zdarzenie #313 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:04:18,380 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: '
+2026-01-15 15:04:19,126 [INFO] Zapisano zdarzenie #314 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:04:21,926 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: test
+2026-01-15 15:04:22,664 [INFO] Zapisano zdarzenie #315 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:04:24,346 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: admin
+2026-01-15 15:04:24,848 [INFO] Zapisano zdarzenie #316 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:04:25,743 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin
+2026-01-15 15:04:26,395 [INFO] Zapisano zdarzenie #317 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:05:44,766 [INFO] [Fake Telnet] Dane od 172.19.0.1: SHELL: ls
+2026-01-15 15:05:45,593 [INFO] Zapisano zdarzenie #318 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:06:22,290 [INFO] [Fake Telnet] Dane od 172.19.0.1: SHELL: whoami
+2026-01-15 15:06:22,829 [INFO] Zapisano zdarzenie #319 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:06:33,881 [INFO] [Fake Telnet] Dane od 172.19.0.1: SHELL: cat secret_passwords.txt
+2026-01-15 15:06:34,708 [INFO] Zapisano zdarzenie #320 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:07:38,375 [INFO] [+] Połączenie z 172.19.0.1:59708 na porcie 2121 (FTP)
+2026-01-15 15:07:38,376 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:07:39,423 [INFO] Zapisano zdarzenie #321 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:07:39,423 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 15:07:40,178 [INFO] Zapisano zdarzenie #322 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:07:40,180 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 15:07:40,932 [INFO] Zapisano zdarzenie #323 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:07:42,126 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 15:07:43,051 [INFO] Zapisano zdarzenie #324 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:07:43,053 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 15:07:43,751 [INFO] Zapisano zdarzenie #325 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:07:43,753 [INFO] [Fake FTP] Dane od 172.19.0.1: FEAT
+2026-01-15 15:07:44,397 [INFO] Zapisano zdarzenie #326 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:07:44,404 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 15:07:44,949 [INFO] Zapisano zdarzenie #327 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:08:04,866 [INFO] [+] Połączenie z 172.19.0.1:52502 na porcie 2121 (FTP)
+2026-01-15 15:08:04,866 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:08:05,625 [INFO] Zapisano zdarzenie #328 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:08:05,625 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH TLS
+2026-01-15 15:08:06,278 [INFO] Zapisano zdarzenie #329 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:08:06,280 [INFO] [Fake FTP] Dane od 172.19.0.1: AUTH SSL
+2026-01-15 15:08:06,937 [INFO] Zapisano zdarzenie #330 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:08:06,940 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 15:08:07,520 [INFO] Zapisano zdarzenie #331 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:08:07,521 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin
+2026-01-15 15:08:08,125 [INFO] Zapisano zdarzenie #332 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:08:08,134 [INFO] [Fake FTP] Dane od 172.19.0.1: LIST command received (Fake Success)
+2026-01-15 15:08:08,606 [INFO] Zapisano zdarzenie #333 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:09:15,971 [INFO] [+] Połączenie z 172.19.0.1:44224 na porcie 8080 (HTTP)
+2026-01-15 15:09:15,972 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /index.php?id=1%27%20OR%20%271%27=%271 HTTP/1.1
+2026-01-15 15:09:15,972 [INFO] [+] Połączenie z 172.19.0.1:44240 na porcie 8080 (HTTP)
+2026-01-15 15:09:16,669 [INFO] Zapisano zdarzenie #334 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:09:16,913 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 15:09:17,413 [INFO] Zapisano zdarzenie #335 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:10:42,313 [INFO] [+] Połączenie z 172.19.0.1:35542 na porcie 8080 (HTTP)
+2026-01-15 15:10:42,315 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /index.php?user=union_select_admin HTTP/1.1
+2026-01-15 15:10:42,315 [INFO] [+] Połączenie z 172.19.0.1:35554 na porcie 8080 (HTTP)
+2026-01-15 15:10:42,990 [INFO] Zapisano zdarzenie #336 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:10:43,180 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 15:10:43,784 [INFO] Zapisano zdarzenie #337 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:15:31,628 [INFO] [+] Połączenie z 172.19.0.1:39696 na porcie 8080 (HTTP)
+2026-01-15 15:15:31,629 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /search?q=union_select HTTP/1.1
+2026-01-15 15:15:31,629 [INFO] [+] Połączenie z 172.19.0.1:39712 na porcie 8080 (HTTP)
+2026-01-15 15:15:32,585 [INFO] Zapisano zdarzenie #338 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:15:32,778 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 15:15:33,509 [INFO] Zapisano zdarzenie #339 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:18:01,900 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 15:18:01,901 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 15:18:01,907 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 15:18:01,907 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 15:18:01,907 [INFO] Environment: Docker
+2026-01-15 15:18:01,907 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 15:18:01,908 [INFO] Threat Intelligence: Enabled
+2026-01-15 15:18:01,908 [INFO] ==================================================
+2026-01-15 15:18:01,909 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 15:18:01,909 [INFO] ==================================================
+2026-01-15 15:18:01,912 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 15:18:01,912 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 15:18:01,912 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 15:18:01,913 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 15:18:01,914 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 15:18:01,914 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 15:18:01,914 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 15:18:01,916 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 15:18:01,917 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 15:18:01,974 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 15:18:01,975 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-15 15:18:01,979 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-15 15:18:01,980 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 15:18:01,980 [INFO] Environment: Docker
+2026-01-15 15:18:01,980 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 15:18:01,981 [INFO] Threat Intelligence: Enabled
+2026-01-15 15:18:01,981 [INFO] ==================================================
+2026-01-15 15:18:01,981 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 15:18:01,982 [INFO] ==================================================
+2026-01-15 15:18:01,984 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 15:18:01,985 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 15:18:01,985 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 15:18:01,986 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 15:18:01,986 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 15:18:01,987 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 15:18:01,987 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 15:18:01,989 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 15:18:01,991 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 15:19:47,804 [INFO] [+] Połączenie z 172.19.0.1:53240 na porcie 8080 (HTTP)
+2026-01-15 15:19:47,805 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /search?q=union_select HTTP/1.1
+2026-01-15 15:19:47,805 [INFO] [+] Połączenie z 172.19.0.1:53242 na porcie 8080 (HTTP)
+2026-01-15 15:19:48,371 [INFO] Zapisano zdarzenie #340 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:19:48,565 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 15:19:49,181 [INFO] Zapisano zdarzenie #341 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:19:57,624 [INFO] [+] Połączenie z 172.19.0.1:57560 na porcie 8080 (HTTP)
+2026-01-15 15:19:57,625 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /search?q=union_select HTTP/1.1
+2026-01-15 15:19:57,625 [INFO] [+] Połączenie z 172.19.0.1:57574 na porcie 8080 (HTTP)
+2026-01-15 15:19:58,270 [INFO] Zapisano zdarzenie #342 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:19:58,320 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 15:19:58,799 [INFO] Zapisano zdarzenie #343 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:20:17,577 [INFO] [+] Połączenie z 172.19.0.1:37458 na porcie 8080 (HTTP)
+2026-01-15 15:20:17,578 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /search?q=union_select HTTP/1.1
+2026-01-15 15:20:17,578 [INFO] [+] Połączenie z 172.19.0.1:37474 na porcie 8080 (HTTP)
+2026-01-15 15:20:18,013 [INFO] Zapisano zdarzenie #344 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:20:17,795 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 15:20:18,258 [INFO] Zapisano zdarzenie #345 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:25:26,015 [INFO] [+] Połączenie z 172.19.0.1:46920 na porcie 8080 (HTTP)
+2026-01-15 15:25:26,016 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 15:25:26,724 [INFO] Zapisano zdarzenie #346 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:25:27,330 [INFO] [+] Połączenie z 172.19.0.1:35720 na porcie 2323 (TELNET)
+2026-01-15 15:25:27,332 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:25:27,786 [INFO] Zapisano zdarzenie #347 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:27,787 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: root
+2026-01-15 15:25:28,460 [INFO] Zapisano zdarzenie #348 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:28,461 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: password
+2026-01-15 15:25:28,816 [INFO] Zapisano zdarzenie #349 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:28,818 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: cat /etc/passwd
+2026-01-15 15:25:29,329 [INFO] Zapisano zdarzenie #350 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:29,331 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: exit
+2026-01-15 15:25:29,769 [INFO] Zapisano zdarzenie #351 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:29,772 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: ls
+2026-01-15 15:25:30,295 [INFO] Zapisano zdarzenie #352 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:30,817 [INFO] [+] Połączenie z 172.19.0.1:35722 na porcie 2323 (TELNET)
+2026-01-15 15:25:30,819 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:25:31,246 [INFO] Zapisano zdarzenie #353 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:31,246 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: user
+2026-01-15 15:25:31,688 [INFO] Zapisano zdarzenie #354 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:31,690 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: anonymous
+2026-01-15 15:25:32,255 [INFO] Zapisano zdarzenie #355 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:32,256 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: cat /etc/passwd
+2026-01-15 15:25:32,678 [INFO] Zapisano zdarzenie #356 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:32,681 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: ls
+2026-01-15 15:25:33,118 [INFO] Zapisano zdarzenie #357 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:33,120 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: exit
+2026-01-15 15:25:33,496 [INFO] Zapisano zdarzenie #358 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:33,838 [INFO] [+] Połączenie z 172.19.0.1:43550 na porcie 8080 (HTTP)
+2026-01-15 15:25:33,840 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-15 15:25:34,229 [INFO] Zapisano zdarzenie #359 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:25:34,845 [INFO] [+] Połączenie z 172.19.0.1:44540 na porcie 2222 (SSH)
+2026-01-15 15:25:34,846 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:25:35,335 [INFO] [+] Połączenie z 172.19.0.1:44550 na porcie 2222 (SSH)
+2026-01-15 15:25:35,336 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:25:35,377 [INFO] Zapisano zdarzenie #360 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:25:35,378 [INFO] [Fake SSH] Dane od 172.19.0.1: admin
+123456
+2026-01-15 15:25:35,955 [INFO] Zapisano zdarzenie #361 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:25:35,993 [INFO] Zapisano zdarzenie #362 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:25:35,993 [INFO] [Fake SSH] Dane od 172.19.0.1: root
+anonymous
+2026-01-15 15:25:36,222 [INFO] [+] Połączenie z 172.19.0.1:43558 na porcie 8080 (HTTP)
+2026-01-15 15:25:36,223 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /admin HTTP/1.1
+2026-01-15 15:25:36,488 [INFO] Zapisano zdarzenie #363 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:25:36,801 [INFO] Zapisano zdarzenie #364 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:25:38,421 [INFO] [+] Połączenie z 172.19.0.1:43560 na porcie 8080 (HTTP)
+2026-01-15 15:25:38,423 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /index.php?page=../../../etc/passwd HTTP/1.1
+2026-01-15 15:25:39,027 [INFO] Zapisano zdarzenie #365 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:25:39,430 [INFO] [+] Połączenie z 172.19.0.1:42800 na porcie 2121 (FTP)
+2026-01-15 15:25:39,431 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:25:39,951 [INFO] Zapisano zdarzenie #366 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:25:39,951 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 15:25:40,492 [INFO] Zapisano zdarzenie #367 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:25:41,497 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS 123456
+2026-01-15 15:25:42,082 [INFO] Zapisano zdarzenie #368 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:25:44,191 [INFO] [Fake FTP] Dane od 172.19.0.1: QUIT
+2026-01-15 15:25:44,691 [INFO] Zapisano zdarzenie #369 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:25:45,011 [INFO] [+] Połączenie z 172.19.0.1:45318 na porcie 2323 (TELNET)
+2026-01-15 15:25:45,012 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:25:45,273 [INFO] Zapisano zdarzenie #370 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:45,273 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: support
+2026-01-15 15:25:45,618 [INFO] Zapisano zdarzenie #371 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:45,620 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: 123456
+2026-01-15 15:25:45,963 [INFO] Zapisano zdarzenie #372 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:45,965 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: uname -a
+2026-01-15 15:25:46,384 [INFO] Zapisano zdarzenie #373 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:46,387 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: ls
+2026-01-15 15:25:46,763 [INFO] Zapisano zdarzenie #374 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:46,764 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: pwd
+2026-01-15 15:25:47,101 [INFO] Zapisano zdarzenie #375 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:25:47,878 [INFO] [+] Połączenie z 172.19.0.1:35510 na porcie 2121 (FTP)
+2026-01-15 15:25:47,879 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:25:48,273 [INFO] Zapisano zdarzenie #376 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:25:48,274 [INFO] [Fake FTP] Dane od 172.19.0.1: USER support
+2026-01-15 15:25:48,660 [INFO] Zapisano zdarzenie #377 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:25:49,663 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin123
+2026-01-15 15:25:52,896 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:25:52,991 [INFO] Zapisano zdarzenie #378 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:25:53,637 [INFO] [+] Połączenie z 172.19.0.1:38228 na porcie 2121 (FTP)
+2026-01-15 15:25:53,639 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:25:56,911 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:25:57,029 [INFO] Zapisano zdarzenie #379 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:25:57,031 [INFO] [Fake FTP] Dane od 172.19.0.1: USER user
+2026-01-15 15:25:57,637 [INFO] [+] Połączenie z 172.19.0.1:43632 na porcie 2323 (TELNET)
+2026-01-15 15:25:57,638 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:26:00,319 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:00,439 [INFO] Zapisano zdarzenie #380 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:00,924 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:01,000 [INFO] Zapisano zdarzenie #381 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:01,000 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: oracle
+2026-01-15 15:26:04,173 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:04,309 [INFO] Zapisano zdarzenie #382 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:04,310 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: anonymous
+2026-01-15 15:26:07,673 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:07,766 [INFO] Zapisano zdarzenie #383 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:07,767 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: cat /etc/passwd
+2026-01-15 15:26:11,099 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:11,195 [INFO] Zapisano zdarzenie #384 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:11,196 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: pwd
+2026-01-15 15:26:14,525 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:14,625 [INFO] Zapisano zdarzenie #385 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:14,626 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: ls
+2026-01-15 15:26:15,174 [INFO] [+] Połączenie z 172.19.0.1:37152 na porcie 2222 (SSH)
+2026-01-15 15:26:15,175 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:26:15,961 [INFO] [+] Połączenie z 172.19.0.1:37164 na porcie 2222 (SSH)
+2026-01-15 15:26:15,963 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:26:16,461 [INFO] [+] Połączenie z 172.19.0.1:42282 na porcie 8080 (HTTP)
+2026-01-15 15:26:16,462 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /admin HTTP/1.1
+2026-01-15 15:26:17,790 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:17,885 [INFO] Zapisano zdarzenie #386 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:18,494 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:18,580 [INFO] Zapisano zdarzenie #387 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:18,580 [INFO] [Fake SSH] Dane od 172.19.0.1: ftp
+toor
+2026-01-15 15:26:19,159 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:19,266 [INFO] Zapisano zdarzenie #388 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:19,266 [INFO] [Fake SSH] Dane od 172.19.0.1: ftp
+qwerty
+2026-01-15 15:26:19,653 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:19,748 [INFO] Zapisano zdarzenie #389 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:26:20,417 [INFO] [+] Połączenie z 172.19.0.1:42292 na porcie 8080 (HTTP)
+2026-01-15 15:26:20,418 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /wp-admin HTTP/1.1
+2026-01-15 15:26:21,716 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:21,817 [INFO] Zapisano zdarzenie #390 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:22,524 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:22,611 [INFO] Zapisano zdarzenie #391 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:23,651 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:23,762 [INFO] Zapisano zdarzenie #392 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:26:24,121 [INFO] [+] Połączenie z 172.19.0.1:34996 na porcie 2121 (FTP)
+2026-01-15 15:26:24,122 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:26:27,397 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:27,491 [INFO] Zapisano zdarzenie #393 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:27,491 [INFO] [Fake FTP] Dane od 172.19.0.1: USER oracle
+2026-01-15 15:26:28,883 [INFO] [+] Połączenie z 172.19.0.1:35012 na porcie 2121 (FTP)
+2026-01-15 15:26:28,884 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:26:30,223 [INFO] Zapisano zdarzenie #394 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:30,224 [INFO] [Fake FTP] Dane od 172.19.0.1: USER root
+2026-01-15 15:26:30,753 [INFO] Zapisano zdarzenie #395 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:30,932 [INFO] Zapisano zdarzenie #396 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:31,759 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS ftp
+2026-01-15 15:26:32,305 [INFO] Zapisano zdarzenie #397 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:34,314 [INFO] [Fake FTP] Dane od 172.19.0.1: QUIT
+2026-01-15 15:26:35,103 [INFO] Zapisano zdarzenie #398 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:35,819 [INFO] [+] Połączenie z 172.19.0.1:54720 na porcie 2222 (SSH)
+2026-01-15 15:26:35,821 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:26:36,217 [INFO] [+] Połączenie z 172.19.0.1:36392 na porcie 2323 (TELNET)
+2026-01-15 15:26:36,219 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:26:36,403 [INFO] Zapisano zdarzenie #399 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:36,404 [INFO] [Fake SSH] Dane od 172.19.0.1: anonymous
+password
+2026-01-15 15:26:36,833 [INFO] Zapisano zdarzenie #400 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:36,834 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: test
+2026-01-15 15:26:36,955 [INFO] Zapisano zdarzenie #401 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:37,432 [INFO] Zapisano zdarzenie #402 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:37,434 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: letmein
+2026-01-15 15:26:37,876 [INFO] Zapisano zdarzenie #403 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:37,878 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: pwd
+2026-01-15 15:26:38,406 [INFO] Zapisano zdarzenie #404 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:38,407 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: cat /etc/passwd
+2026-01-15 15:26:38,972 [INFO] Zapisano zdarzenie #405 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:38,974 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: ls
+2026-01-15 15:26:39,558 [INFO] Zapisano zdarzenie #406 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:40,760 [INFO] [+] Połączenie z 172.19.0.1:54730 na porcie 2222 (SSH)
+2026-01-15 15:26:40,761 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:26:41,071 [INFO] [+] Połączenie z 172.19.0.1:36402 na porcie 2323 (TELNET)
+2026-01-15 15:26:41,072 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:26:41,426 [INFO] Zapisano zdarzenie #407 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:41,426 [INFO] [Fake SSH] Dane od 172.19.0.1: oracle
+anonymous
+2026-01-15 15:26:41,492 [INFO] Zapisano zdarzenie #408 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:41,493 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: support
+2026-01-15 15:26:41,908 [INFO] Zapisano zdarzenie #409 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:41,910 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin123
+2026-01-15 15:26:41,939 [INFO] Zapisano zdarzenie #410 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:42,553 [INFO] Zapisano zdarzenie #411 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:42,556 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: uname -a
+2026-01-15 15:26:43,088 [INFO] Zapisano zdarzenie #412 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:43,090 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: pwd
+2026-01-15 15:26:43,610 [INFO] Zapisano zdarzenie #413 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:43,612 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: whoami
+2026-01-15 15:26:44,096 [INFO] Zapisano zdarzenie #414 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:26:44,761 [INFO] [+] Połączenie z 172.19.0.1:51360 na porcie 2222 (SSH)
+2026-01-15 15:26:44,762 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:26:44,959 [INFO] Zapisano zdarzenie #415 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:44,960 [INFO] [Fake SSH] Dane od 172.19.0.1: ftp
+123456
+2026-01-15 15:26:45,504 [INFO] [+] Połączenie z 172.19.0.1:60216 na porcie 2121 (FTP)
+2026-01-15 15:26:45,504 [INFO] Zapisano zdarzenie #416 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:26:45,505 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:26:46,141 [INFO] Zapisano zdarzenie #417 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:46,142 [INFO] [Fake FTP] Dane od 172.19.0.1: USER oracle
+2026-01-15 15:26:46,805 [INFO] Zapisano zdarzenie #418 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:47,807 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS letmein
+2026-01-15 15:26:48,257 [INFO] Zapisano zdarzenie #419 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:50,362 [INFO] [Fake FTP] Dane od 172.19.0.1: QUIT
+2026-01-15 15:26:53,595 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:53,687 [INFO] Zapisano zdarzenie #420 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:26:53,787 [INFO] [+] Połączenie z 172.19.0.1:57068 na porcie 8080 (HTTP)
+2026-01-15 15:26:53,788 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /?name=<script>alert('XSS')</script> HTTP/1.1
+2026-01-15 15:26:57,106 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:26:57,183 [INFO] Zapisano zdarzenie #421 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:29:23,955 [INFO] [+] Połączenie z 172.19.0.1:59224 na porcie 2121 (FTP)
+2026-01-15 15:29:23,957 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:29:24,537 [INFO] Zapisano zdarzenie #422 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:29:24,537 [INFO] [Fake FTP] Dane od 172.19.0.1: USER user
+2026-01-15 15:29:24,912 [INFO] Zapisano zdarzenie #423 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:29:25,922 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin123
+2026-01-15 15:29:26,434 [INFO] Zapisano zdarzenie #424 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:29:28,777 [INFO] [+] Połączenie z 172.19.0.1:41826 na porcie 8080 (HTTP)
+2026-01-15 15:29:28,778 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /?name=<script>alert('XSS')</script> HTTP/1.1
+2026-01-15 15:29:29,354 [INFO] Zapisano zdarzenie #425 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:29:29,800 [INFO] [+] Połączenie z 172.19.0.1:41838 na porcie 8080 (HTTP)
+2026-01-15 15:29:29,801 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /index.php?page=../../../etc/passwd HTTP/1.1
+2026-01-15 15:29:30,231 [INFO] Zapisano zdarzenie #426 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:29:31,177 [INFO] [+] Połączenie z 172.19.0.1:44404 na porcie 2323 (TELNET)
+2026-01-15 15:29:31,179 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:29:31,675 [INFO] Zapisano zdarzenie #427 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:31,676 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: anonymous
+2026-01-15 15:29:32,280 [INFO] Zapisano zdarzenie #428 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:32,282 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: letmein
+2026-01-15 15:29:32,686 [INFO] [+] Połączenie z 172.19.0.1:48218 na porcie 2323 (TELNET)
+2026-01-15 15:29:32,687 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:29:32,754 [INFO] Zapisano zdarzenie #429 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:33,302 [INFO] Zapisano zdarzenie #430 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:33,303 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: root
+2026-01-15 15:29:33,943 [INFO] Zapisano zdarzenie #431 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:33,944 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: 123456
+2026-01-15 15:29:34,541 [INFO] Zapisano zdarzenie #432 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:34,605 [INFO] [+] Połączenie z 172.19.0.1:48220 na porcie 2323 (TELNET)
+2026-01-15 15:29:34,607 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:29:34,972 [INFO] Zapisano zdarzenie #433 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:34,972 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: anonymous
+2026-01-15 15:29:35,466 [INFO] Zapisano zdarzenie #434 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:35,471 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: admin123
+2026-01-15 15:29:35,859 [INFO] [+] Połączenie z 172.19.0.1:35658 na porcie 8080 (HTTP)
+2026-01-15 15:29:35,860 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 15:29:35,976 [INFO] Zapisano zdarzenie #435 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:36,416 [INFO] Zapisano zdarzenie #436 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:29:37,305 [INFO] [+] Połączenie z 172.19.0.1:48236 na porcie 2323 (TELNET)
+2026-01-15 15:29:37,306 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:29:37,774 [INFO] Zapisano zdarzenie #437 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:37,774 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: ftp
+2026-01-15 15:29:38,313 [INFO] Zapisano zdarzenie #438 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:38,315 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: ftp
+2026-01-15 15:29:38,804 [INFO] Zapisano zdarzenie #439 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:39,009 [INFO] [+] Połączenie z 172.19.0.1:48238 na porcie 2323 (TELNET)
+2026-01-15 15:29:39,010 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:29:39,497 [INFO] Zapisano zdarzenie #440 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:39,497 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: support
+2026-01-15 15:29:39,987 [INFO] Zapisano zdarzenie #441 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:39,989 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: password
+2026-01-15 15:29:40,413 [INFO] Zapisano zdarzenie #442 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:40,566 [INFO] [+] Połączenie z 172.19.0.1:35660 na porcie 8080 (HTTP)
+2026-01-15 15:29:40,568 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /login HTTP/1.1
+2026-01-15 15:29:40,986 [INFO] Zapisano zdarzenie #443 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:29:41,466 [INFO] [+] Połączenie z 172.19.0.1:57734 na porcie 3306 (MYSQL)
+2026-01-15 15:29:41,467 [INFO] [Fake MySQL] Dane od 172.19.0.1: MYSQL_CONNECTION
+2026-01-15 15:29:41,817 [INFO] Zapisano zdarzenie #444 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:29:41,818 [INFO] [Fake MySQL] Dane od 172.19.0.1: MySQL auth attempt:       !                   root  
+2026-01-15 15:29:42,429 [INFO] Zapisano zdarzenie #445 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:29:42,452 [INFO] [+] Połączenie z 172.19.0.1:57464 na porcie 2121 (FTP)
+2026-01-15 15:29:42,452 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:29:43,090 [INFO] Zapisano zdarzenie #446 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:29:43,091 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 15:29:43,666 [INFO] Zapisano zdarzenie #447 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:29:44,669 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS password
+2026-01-15 15:29:45,270 [INFO] Zapisano zdarzenie #448 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:29:47,598 [INFO] [+] Połączenie z 172.19.0.1:40020 na porcie 3306 (MYSQL)
+2026-01-15 15:29:47,599 [INFO] [Fake MySQL] Dane od 172.19.0.1: MYSQL_CONNECTION
+2026-01-15 15:29:47,973 [INFO] [+] Połączenie z 172.19.0.1:40026 na porcie 3306 (MYSQL)
+2026-01-15 15:29:47,974 [INFO] [Fake MySQL] Dane od 172.19.0.1: MYSQL_CONNECTION
+2026-01-15 15:29:48,046 [INFO] Zapisano zdarzenie #449 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:29:48,047 [INFO] [Fake MySQL] Dane od 172.19.0.1: MySQL auth attempt:       !                   root  
+2026-01-15 15:29:48,357 [INFO] Zapisano zdarzenie #450 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:29:48,358 [INFO] [Fake MySQL] Dane od 172.19.0.1: MySQL auth attempt:       !                   root  
+2026-01-15 15:29:48,467 [INFO] Zapisano zdarzenie #451 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:29:48,722 [INFO] [+] Połączenie z 172.19.0.1:44340 na porcie 2222 (SSH)
+2026-01-15 15:29:48,723 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:29:49,078 [INFO] [+] Połączenie z 172.19.0.1:36584 na porcie 8080 (HTTP)
+2026-01-15 15:29:49,079 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /login HTTP/1.1
+2026-01-15 15:29:51,496 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:29:51,564 [INFO] Zapisano zdarzenie #452 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:29:51,897 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:29:51,975 [INFO] Zapisano zdarzenie #453 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:29:51,975 [INFO] [Fake SSH] Dane od 172.19.0.1: ftp
+admin123
+2026-01-15 15:29:52,337 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:29:52,425 [INFO] Zapisano zdarzenie #454 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:29:52,468 [INFO] [+] Połączenie z 172.19.0.1:51052 na porcie 2323 (TELNET)
+2026-01-15 15:29:52,469 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:29:55,175 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:29:55,239 [INFO] Zapisano zdarzenie #455 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:29:55,608 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:29:55,685 [INFO] Zapisano zdarzenie #456 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:29:55,686 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: support
+2026-01-15 15:29:58,469 [INFO] [+] Połączenie z 172.19.0.1:56980 na porcie 8080 (HTTP)
+2026-01-15 15:29:58,489 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 15:29:58,829 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:29:58,913 [INFO] Zapisano zdarzenie #457 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:30:01,649 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:01,717 [INFO] Zapisano zdarzenie #458 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:30:02,253 [INFO] [+] Połączenie z 172.19.0.1:57690 na porcie 2323 (TELNET)
+2026-01-15 15:30:02,254 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:30:05,403 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:05,470 [INFO] Zapisano zdarzenie #459 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:30:05,470 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: root
+2026-01-15 15:30:08,216 [INFO] [+] Połączenie z 172.19.0.1:49594 na porcie 2121 (FTP)
+2026-01-15 15:30:08,217 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:30:08,794 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:08,875 [INFO] Zapisano zdarzenie #460 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:30:11,376 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:11,464 [INFO] Zapisano zdarzenie #461 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:11,464 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 15:30:11,985 [INFO] [+] Połączenie z 172.19.0.1:39256 na porcie 3306 (MYSQL)
+2026-01-15 15:30:11,986 [INFO] [Fake MySQL] Dane od 172.19.0.1: MYSQL_CONNECTION
+2026-01-15 15:30:12,574 [INFO] [+] Połączenie z 172.19.0.1:41678 na porcie 2323 (TELNET)
+2026-01-15 15:30:12,576 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:30:14,518 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:14,588 [INFO] Zapisano zdarzenie #462 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:14,955 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:15,024 [INFO] Zapisano zdarzenie #463 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:30:15,025 [INFO] [Fake MySQL] Dane od 172.19.0.1: MySQL auth attempt:       !                   root  
+2026-01-15 15:30:15,556 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:15,618 [INFO] Zapisano zdarzenie #464 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:30:15,618 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: support
+2026-01-15 15:30:18,166 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:18,237 [INFO] Zapisano zdarzenie #465 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:30:18,884 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:18,952 [INFO] Zapisano zdarzenie #466 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:30:19,022 [INFO] [+] Połączenie z 172.19.0.1:41246 na porcie 8080 (HTTP)
+2026-01-15 15:30:19,023 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 15:30:22,217 [WARNING] Błąd geolokalizacji dla 172.19.0.1: HTTPConnectionPool(host='ip-api.com', port=80): Read timed out. (read timeout=3)
+2026-01-15 15:30:22,306 [INFO] Zapisano zdarzenie #467 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:30:22,789 [INFO] [+] Połączenie z 172.19.0.1:41154 na porcie 2121 (FTP)
+2026-01-15 15:30:22,790 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:30:25,927 [INFO] Zapisano zdarzenie #468 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:25,928 [INFO] [Fake FTP] Dane od 172.19.0.1: USER ftp
+2026-01-15 15:30:26,281 [INFO] [+] Połączenie z 172.19.0.1:41156 na porcie 2121 (FTP)
+2026-01-15 15:30:26,282 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:30:26,305 [INFO] Zapisano zdarzenie #469 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:26,638 [INFO] Zapisano zdarzenie #470 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:26,638 [INFO] [Fake FTP] Dane od 172.19.0.1: USER admin
+2026-01-15 15:30:26,966 [INFO] Zapisano zdarzenie #471 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:27,969 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS admin123
+2026-01-15 15:30:28,529 [INFO] Zapisano zdarzenie #472 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:31,222 [INFO] [+] Połączenie z 172.19.0.1:59090 na porcie 3306 (MYSQL)
+2026-01-15 15:30:31,223 [INFO] [Fake MySQL] Dane od 172.19.0.1: MYSQL_CONNECTION
+2026-01-15 15:30:31,752 [INFO] Zapisano zdarzenie #473 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:30:31,752 [INFO] [Fake MySQL] Dane od 172.19.0.1: MySQL auth attempt:       !                   root  
+2026-01-15 15:30:31,945 [INFO] [+] Połączenie z 172.19.0.1:59268 na porcie 2323 (TELNET)
+2026-01-15 15:30:31,946 [INFO] [Fake Telnet] Dane od 172.19.0.1: TELNET_CONNECTION
+2026-01-15 15:30:32,243 [INFO] Zapisano zdarzenie #474 w DB: Fake MySQL od 172.19.0.1
+2026-01-15 15:30:32,361 [INFO] Zapisano zdarzenie #475 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:30:32,361 [INFO] [Fake Telnet] Dane od 172.19.0.1: Username: anonymous
+2026-01-15 15:30:32,809 [INFO] Zapisano zdarzenie #476 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:30:32,812 [INFO] [Fake Telnet] Dane od 172.19.0.1: Password: toor
+2026-01-15 15:30:33,296 [INFO] Zapisano zdarzenie #477 w DB: Fake Telnet od 172.19.0.1
+2026-01-15 15:30:33,306 [INFO] [+] Połączenie z 172.19.0.1:55446 na porcie 2121 (FTP)
+2026-01-15 15:30:33,307 [INFO] [Fake FTP] Dane od 172.19.0.1: FTP_CONNECTION
+2026-01-15 15:30:33,939 [INFO] Zapisano zdarzenie #478 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:33,939 [INFO] [Fake FTP] Dane od 172.19.0.1: USER anonymous
+2026-01-15 15:30:34,410 [INFO] Zapisano zdarzenie #479 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:35,423 [INFO] [Fake FTP] Dane od 172.19.0.1: PASS 123456
+2026-01-15 15:30:36,048 [INFO] Zapisano zdarzenie #480 w DB: Fake FTP od 172.19.0.1
+2026-01-15 15:30:38,889 [INFO] [+] Połączenie z 172.19.0.1:44412 na porcie 2222 (SSH)
+2026-01-15 15:30:38,890 [INFO] [Fake SSH] Dane od 172.19.0.1: CONNECTION_ATTEMPT
+2026-01-15 15:30:39,417 [INFO] Zapisano zdarzenie #481 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:30:39,417 [INFO] [Fake SSH] Dane od 172.19.0.1: anonymous
+ftp
+2026-01-15 15:30:40,041 [INFO] Zapisano zdarzenie #482 w DB: Fake SSH od 172.19.0.1
+2026-01-15 15:44:37,824 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 15:44:37,824 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 15:44:37,825 [INFO] Environment: Docker
+2026-01-15 15:44:37,825 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 15:44:37,826 [INFO] Threat Intelligence: Enabled
+2026-01-15 15:44:37,826 [INFO] ==================================================
+2026-01-15 15:44:37,827 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 15:44:37,827 [INFO] ==================================================
+2026-01-15 15:44:37,828 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 15:44:37,829 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 15:44:37,829 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 15:44:37,830 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 15:44:37,830 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 15:44:37,831 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 15:44:37,831 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 15:44:37,831 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 15:44:37,833 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 15:44:37,857 [INFO] Baza danych zainicjalizowana pomyślnie: /app/data/honeypot_events.db
+2026-01-15 15:44:37,858 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-15 15:44:37,858 [INFO] Environment: Docker
+2026-01-15 15:44:37,858 [INFO] Database Path: /app/data/honeypot_events.db
+2026-01-15 15:44:37,858 [INFO] Threat Intelligence: Enabled
+2026-01-15 15:44:37,859 [INFO] ==================================================
+2026-01-15 15:44:37,859 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-15 15:44:37,859 [INFO] ==================================================
+2026-01-15 15:44:37,860 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-15 15:44:37,860 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-15 15:44:37,861 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-15 15:44:37,861 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-15 15:44:37,862 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-15 15:44:37,862 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-15 15:44:37,862 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-15 15:44:37,863 [INFO] 🔍 System monitoruje połączenia...
+2026-01-15 15:44:37,864 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-15 15:46:05,479 [INFO] [+] Połączenie z 172.19.0.1:42344 na porcie 8080 (HTTP)
+2026-01-15 15:46:06,133 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET / HTTP/1.1
+2026-01-15 15:46:06,135 [INFO] [+] Połączenie z 172.19.0.1:42354 na porcie 8080 (HTTP)
+2026-01-15 15:46:06,219 [INFO] Zapisano zdarzenie #483 w DB: Fake HTTP od 172.19.0.1
+2026-01-15 15:46:06,425 [INFO] [Fake HTTP] Dane od 172.19.0.1: REQUEST: GET /favicon.ico HTTP/1.1
+2026-01-15 15:46:06,502 [INFO] Zapisano zdarzenie #484 w DB: Fake HTTP od 172.19.0.1

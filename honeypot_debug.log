@@ -1,0 +1,259 @@
+2026-01-14 22:08:26,000 [INFO] Baza danych zainicjalizowana pomy�lnie
+2026-01-14 22:08:26,001 [WARNING] Nie mo�na za�adowa� GeoIP2 database: Error opening database file (GeoLite2-City.mmdb). Is this a valid MaxMind DB file?
+2026-01-14 22:08:26,003 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 22:08:26,003 [INFO] Database: honeypot_events.db
+2026-01-14 22:08:26,003 [INFO] Threat Intelligence: Enabled
+2026-01-14 22:08:26,005 [INFO] ==================================================
+2026-01-14 22:08:26,051 [INFO] ==================================================
+2026-01-14 22:08:26,051 [INFO] [*] Uruchomiono us�ug� 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 22:08:26,051 [INFO] [*] Uruchomiono us�ug� 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 22:08:26,051 [INFO] [*] Uruchomiono us�ug� 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 22:08:26,051 [INFO] [*] Uruchomiono us�ug� 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 22:08:26,058 [INFO] [*] Uruchomiono us�ug� 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 22:08:26,058 [INFO] [*] Uruchomiono us�ug� 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 22:10:49,723 [INFO] Baza danych zainicjalizowana pomy�lnie
+2026-01-14 22:10:49,725 [WARNING] Nie mo�na za�adowa� GeoIP2 database: Error opening database file (GeoLite2-City.mmdb). Is this a valid MaxMind DB file?
+2026-01-14 22:10:49,725 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 22:10:49,725 [INFO] Database: honeypot_events.db
+2026-01-14 22:10:49,725 [INFO] Threat Intelligence: Enabled
+2026-01-14 22:10:49,725 [INFO] ==================================================
+2026-01-14 22:10:49,728 [INFO] ==================================================
+2026-01-14 22:10:49,729 [INFO] [*] Uruchomiono us�ug� 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 22:10:49,729 [INFO] [*] Uruchomiono us�ug� 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 22:10:49,729 [INFO] [*] Uruchomiono us�ug� 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 22:10:49,729 [INFO] [*] Uruchomiono us�ug� 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 22:10:49,730 [INFO] [*] Uruchomiono us�ug� 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 22:10:49,730 [INFO] [*] Uruchomiono us�ug� 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 22:11:59,196 [INFO] Baza danych zainicjalizowana pomy�lnie
+2026-01-14 22:11:59,196 [WARNING] Nie mo�na za�adowa� GeoIP2 database: Error opening database file (GeoLite2-City.mmdb). Is this a valid MaxMind DB file?
+2026-01-14 22:11:59,196 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 22:11:59,197 [INFO] Database: honeypot_events.db
+2026-01-14 22:11:59,197 [INFO] Threat Intelligence: Enabled
+2026-01-14 22:11:59,197 [INFO] ==================================================
+2026-01-14 22:11:59,199 [INFO] ==================================================
+2026-01-14 22:11:59,200 [INFO] [*] Uruchomiono us�ug� 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 22:11:59,200 [INFO] [*] Uruchomiono us�ug� 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 22:11:59,201 [INFO] [*] Uruchomiono us�ug� 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 22:11:59,201 [INFO] [*] Uruchomiono us�ug� 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 22:11:59,201 [INFO] [*] Uruchomiono us�ug� 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 22:11:59,201 [INFO] [*] Uruchomiono us�ug� 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 22:13:30,794 [INFO] Baza danych zainicjalizowana pomyślnie
+2026-01-14 22:13:30,794 [WARNING] Nie można załadować GeoIP2 database: Error opening database file (GeoLite2-City.mmdb). Is this a valid MaxMind DB file?
+2026-01-14 22:13:30,794 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 22:13:30,795 [INFO] Database: honeypot_events.db
+2026-01-14 22:13:30,795 [INFO] Threat Intelligence: Enabled
+2026-01-14 22:13:30,795 [INFO] ==================================================
+2026-01-14 22:13:30,795 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-14 22:13:30,795 [INFO] ==================================================
+2026-01-14 22:13:30,796 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 22:13:30,796 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 22:13:30,796 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 22:13:30,796 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 22:13:30,796 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-14 22:13:30,798 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 22:13:30,798 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 22:13:30,798 [INFO] 🔍 System monitoruje połączenia...
+2026-01-14 22:13:30,802 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-14 22:21:15,357 [INFO] Baza danych zainicjalizowana pomyślnie: C:\Users\jasie\honeypot_projekt\honeypot_events.db
+2026-01-14 22:21:15,357 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-14 22:21:15,357 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-14 22:21:15,357 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 22:21:15,357 [INFO] Database: honeypot_events.db
+2026-01-14 22:21:15,357 [INFO] Threat Intelligence: Enabled
+2026-01-14 22:21:15,357 [INFO] ==================================================
+2026-01-14 22:21:15,357 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-14 22:21:15,357 [INFO] ==================================================
+2026-01-14 22:21:15,357 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 22:21:15,357 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 22:21:15,357 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 22:21:15,357 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 22:21:15,366 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 22:21:15,368 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-14 22:21:15,368 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 22:21:15,376 [INFO] 🔍 System monitoruje połączenia...
+2026-01-14 22:21:15,379 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-14 22:23:53,288 [INFO] Baza danych zainicjalizowana pomyślnie: C:\Users\jasie\honeypot_projekt\honeypot_events.db
+2026-01-14 22:23:53,288 [WARNING] Ścieżka GeoIP GeoLite2-City.mmdb jest katalogiem. Szukam pliku .mmdb wewnątrz...
+2026-01-14 22:23:53,289 [WARNING] Brak poprawnego pliku GeoIP2: GeoLite2-City.mmdb. Geolokalizacja będzie ograniczona.
+2026-01-14 22:23:53,289 [INFO] === ADVANCED HONEYPOT SYSTEM ===
+2026-01-14 22:23:53,289 [INFO] Database: honeypot_events.db
+2026-01-14 22:23:53,289 [INFO] Threat Intelligence: Enabled
+2026-01-14 22:23:53,289 [INFO] ==================================================
+2026-01-14 22:23:53,289 [INFO] 🛡️  ADVANCED HONEYPOT SYSTEM - STARTING
+2026-01-14 22:23:53,289 [INFO] ==================================================
+2026-01-14 22:23:53,291 [INFO] [*] Uruchomiono usługę 'Fake SSH' (SSH) na porcie 2222
+2026-01-14 22:23:53,291 [INFO] [*] Uruchomiono usługę 'Fake HTTP' (HTTP) na porcie 8080
+2026-01-14 22:23:53,291 [INFO] [*] Uruchomiono usługę 'Fake FTP' (FTP) na porcie 2121
+2026-01-14 22:23:53,293 [INFO] [*] Uruchomiono usługę 'Fake Telnet' (TELNET) na porcie 2323
+2026-01-14 22:23:53,293 [INFO] [*] Uruchomiono usługę 'Fake SMTP' (SMTP) na porcie 2525
+2026-01-14 22:23:53,293 [INFO] 
+✅ Uruchomiono 6 usług honeypot
+2026-01-14 22:23:53,294 [INFO] [*] Uruchomiono usługę 'Fake MySQL' (MYSQL) na porcie 3306
+2026-01-14 22:23:53,297 [INFO] 🔍 System monitoruje połączenia...
+2026-01-14 22:23:53,297 [INFO] ⚠️  Naciśnij Ctrl+C aby zatrzymać
+
+2026-01-14 22:24:31,616 [INFO] [+] Połączenie z 127.0.0.1:57483 na porcie 8080 (HTTP)
+2026-01-14 22:24:31,616 [INFO] [Fake HTTP] Dane od 127.0.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-14 22:24:31,622 [INFO] Zapisano zdarzenie #1 w DB: Fake HTTP od 127.0.0.1
+2026-01-14 22:24:32,562 [INFO] [+] Połączenie z 127.0.0.1:57488 na porcie 2121 (FTP)
+2026-01-14 22:24:32,565 [INFO] [Fake FTP] Dane od 127.0.0.1: FTP_CONNECTION
+2026-01-14 22:24:32,578 [INFO] Zapisano zdarzenie #2 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:32,583 [INFO] [Fake FTP] Dane od 127.0.0.1: USER anonymous
+2026-01-14 22:24:32,589 [INFO] Zapisano zdarzenie #3 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:32,589 [INFO] [Fake FTP] Dane od 127.0.0.1: PASS admin123
+2026-01-14 22:24:32,598 [INFO] Zapisano zdarzenie #4 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:33,546 [INFO] [+] Połączenie z 127.0.0.1:57493 na porcie 2222 (SSH)
+2026-01-14 22:24:33,547 [INFO] [Fake SSH] Dane od 127.0.0.1: CONNECTION_ATTEMPT
+2026-01-14 22:24:33,554 [INFO] Zapisano zdarzenie #5 w DB: Fake SSH od 127.0.0.1
+2026-01-14 22:24:33,560 [INFO] [Fake SSH] Dane od 127.0.0.1: admin
+qwerty
+2026-01-14 22:24:33,564 [INFO] Zapisano zdarzenie #6 w DB: Fake SSH od 127.0.0.1
+2026-01-14 22:24:34,203 [INFO] [+] Połączenie z 127.0.0.1:57498 na porcie 2323 (TELNET)
+2026-01-14 22:24:34,204 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:34,211 [INFO] Zapisano zdarzenie #7 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:34,419 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: oracle
+2026-01-14 22:24:34,424 [INFO] Zapisano zdarzenie #8 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:34,619 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: password
+2026-01-14 22:24:34,627 [INFO] Zapisano zdarzenie #9 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:35,491 [INFO] [+] Połączenie z 127.0.0.1:57507 na porcie 8080 (HTTP)
+2026-01-14 22:24:35,492 [INFO] [Fake HTTP] Dane od 127.0.0.1: REQUEST: GET /login HTTP/1.1
+2026-01-14 22:24:35,505 [INFO] Zapisano zdarzenie #10 w DB: Fake HTTP od 127.0.0.1
+2026-01-14 22:24:35,831 [INFO] [+] Połączenie z 127.0.0.1:57510 na porcie 2121 (FTP)
+2026-01-14 22:24:35,831 [INFO] [Fake FTP] Dane od 127.0.0.1: FTP_CONNECTION
+2026-01-14 22:24:35,839 [INFO] Zapisano zdarzenie #11 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:35,839 [INFO] [Fake FTP] Dane od 127.0.0.1: USER root
+2026-01-14 22:24:35,842 [INFO] Zapisano zdarzenie #12 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:35,842 [INFO] [Fake FTP] Dane od 127.0.0.1: PASS password
+2026-01-14 22:24:35,848 [INFO] Zapisano zdarzenie #13 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:36,921 [INFO] [+] Połączenie z 127.0.0.1:57516 na porcie 2323 (TELNET)
+2026-01-14 22:24:36,922 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:36,931 [INFO] Zapisano zdarzenie #14 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:37,143 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: ftp
+2026-01-14 22:24:37,150 [INFO] Zapisano zdarzenie #15 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:37,344 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: anonymous
+2026-01-14 22:24:37,351 [INFO] Zapisano zdarzenie #16 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:37,987 [INFO] [+] Połączenie z 127.0.0.1:57521 na porcie 2222 (SSH)
+2026-01-14 22:24:37,988 [INFO] [Fake SSH] Dane od 127.0.0.1: CONNECTION_ATTEMPT
+2026-01-14 22:24:37,993 [INFO] Zapisano zdarzenie #17 w DB: Fake SSH od 127.0.0.1
+2026-01-14 22:24:37,996 [INFO] [Fake SSH] Dane od 127.0.0.1: anonymous
+ftp
+2026-01-14 22:24:38,001 [INFO] Zapisano zdarzenie #18 w DB: Fake SSH od 127.0.0.1
+2026-01-14 22:24:38,550 [INFO] [+] Połączenie z 127.0.0.1:57527 na porcie 2121 (FTP)
+2026-01-14 22:24:38,552 [INFO] [Fake FTP] Dane od 127.0.0.1: FTP_CONNECTION
+2026-01-14 22:24:38,557 [INFO] Zapisano zdarzenie #19 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:38,569 [INFO] [Fake FTP] Dane od 127.0.0.1: USER oracle
+2026-01-14 22:24:38,578 [INFO] Zapisano zdarzenie #20 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:38,579 [INFO] [Fake FTP] Dane od 127.0.0.1: PASS admin123
+2026-01-14 22:24:38,585 [INFO] Zapisano zdarzenie #21 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:39,064 [INFO] [+] Połączenie z 127.0.0.1:57530 na porcie 8080 (HTTP)
+2026-01-14 22:24:39,065 [INFO] [Fake HTTP] Dane od 127.0.0.1: REQUEST: GET /?name=<script>alert('XSS')</script> HTTP/1.1
+2026-01-14 22:24:39,070 [INFO] Zapisano zdarzenie #22 w DB: Fake HTTP od 127.0.0.1
+2026-01-14 22:24:39,982 [INFO] [+] Połączenie z 127.0.0.1:57536 na porcie 8080 (HTTP)
+2026-01-14 22:24:39,984 [INFO] [Fake HTTP] Dane od 127.0.0.1: REQUEST: GET /config.php HTTP/1.1
+2026-01-14 22:24:39,991 [INFO] Zapisano zdarzenie #23 w DB: Fake HTTP od 127.0.0.1
+2026-01-14 22:24:40,788 [INFO] [+] Połączenie z 127.0.0.1:57541 na porcie 2323 (TELNET)
+2026-01-14 22:24:40,790 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:40,799 [INFO] Zapisano zdarzenie #24 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:41,013 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: oracle
+2026-01-14 22:24:41,020 [INFO] Zapisano zdarzenie #25 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:41,213 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: qwerty
+2026-01-14 22:24:41,219 [INFO] Zapisano zdarzenie #26 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:42,355 [INFO] [+] Połączenie z 127.0.0.1:57547 na porcie 8080 (HTTP)
+2026-01-14 22:24:42,355 [INFO] [Fake HTTP] Dane od 127.0.0.1: REQUEST: GET /login HTTP/1.1
+2026-01-14 22:24:42,360 [INFO] Zapisano zdarzenie #27 w DB: Fake HTTP od 127.0.0.1
+2026-01-14 22:24:42,761 [INFO] [+] Połączenie z 127.0.0.1:57550 na porcie 2323 (TELNET)
+2026-01-14 22:24:42,762 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:42,772 [INFO] Zapisano zdarzenie #28 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:42,973 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: root
+2026-01-14 22:24:42,981 [INFO] Zapisano zdarzenie #29 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:43,173 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: toor
+2026-01-14 22:24:43,181 [INFO] Zapisano zdarzenie #30 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:44,445 [INFO] [+] Połączenie z 127.0.0.1:57558 na porcie 2323 (TELNET)
+2026-01-14 22:24:44,446 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:44,450 [INFO] Zapisano zdarzenie #31 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:44,645 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: root
+2026-01-14 22:24:44,651 [INFO] Zapisano zdarzenie #32 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:44,846 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: letmein
+2026-01-14 22:24:44,853 [INFO] Zapisano zdarzenie #33 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:46,060 [INFO] [+] Połączenie z 127.0.0.1:49939 na porcie 2323 (TELNET)
+2026-01-14 22:24:46,060 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:46,069 [INFO] Zapisano zdarzenie #34 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:46,261 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: oracle
+2026-01-14 22:24:46,267 [INFO] Zapisano zdarzenie #35 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:46,461 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: admin123
+2026-01-14 22:24:46,468 [INFO] Zapisano zdarzenie #36 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:47,619 [INFO] [+] Połączenie z 127.0.0.1:49946 na porcie 8080 (HTTP)
+2026-01-14 22:24:47,619 [INFO] [Fake HTTP] Dane od 127.0.0.1: REQUEST: GET /?name=<script>alert('XSS')</script> HTTP/1.1
+2026-01-14 22:24:47,627 [INFO] Zapisano zdarzenie #37 w DB: Fake HTTP od 127.0.0.1
+2026-01-14 22:24:48,078 [INFO] [+] Połączenie z 127.0.0.1:49949 na porcie 2121 (FTP)
+2026-01-14 22:24:48,078 [INFO] [Fake FTP] Dane od 127.0.0.1: FTP_CONNECTION
+2026-01-14 22:24:48,088 [INFO] Zapisano zdarzenie #38 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:48,088 [INFO] [Fake FTP] Dane od 127.0.0.1: USER anonymous
+2026-01-14 22:24:48,094 [INFO] Zapisano zdarzenie #39 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:48,094 [INFO] [Fake FTP] Dane od 127.0.0.1: PASS admin123
+2026-01-14 22:24:48,099 [INFO] Zapisano zdarzenie #40 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:48,622 [INFO] [+] Połączenie z 127.0.0.1:49952 na porcie 8080 (HTTP)
+2026-01-14 22:24:48,623 [INFO] [Fake HTTP] Dane od 127.0.0.1: REQUEST: GET /wp-admin HTTP/1.1
+2026-01-14 22:24:48,629 [INFO] Zapisano zdarzenie #41 w DB: Fake HTTP od 127.0.0.1
+2026-01-14 22:24:50,253 [INFO] [+] Połączenie z 127.0.0.1:49959 na porcie 2121 (FTP)
+2026-01-14 22:24:50,254 [INFO] [Fake FTP] Dane od 127.0.0.1: FTP_CONNECTION
+2026-01-14 22:24:50,260 [INFO] Zapisano zdarzenie #42 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:50,260 [INFO] [Fake FTP] Dane od 127.0.0.1: USER oracle
+2026-01-14 22:24:50,266 [INFO] Zapisano zdarzenie #43 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:50,267 [INFO] [Fake FTP] Dane od 127.0.0.1: PASS admin123
+2026-01-14 22:24:50,273 [INFO] Zapisano zdarzenie #44 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:50,871 [INFO] [+] Połączenie z 127.0.0.1:49962 na porcie 2323 (TELNET)
+2026-01-14 22:24:50,872 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:50,883 [INFO] Zapisano zdarzenie #45 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:51,072 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: anonymous
+2026-01-14 22:24:51,083 [INFO] Zapisano zdarzenie #46 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:51,272 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: anonymous
+2026-01-14 22:24:51,278 [INFO] Zapisano zdarzenie #47 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:52,154 [INFO] [+] Połączenie z 127.0.0.1:49971 na porcie 2323 (TELNET)
+2026-01-14 22:24:52,154 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:52,160 [INFO] Zapisano zdarzenie #48 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:52,372 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: anonymous
+2026-01-14 22:24:52,380 [INFO] Zapisano zdarzenie #49 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:52,572 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: 123456
+2026-01-14 22:24:52,578 [INFO] Zapisano zdarzenie #50 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:53,597 [INFO] [+] Połączenie z 127.0.0.1:49977 na porcie 8080 (HTTP)
+2026-01-14 22:24:53,613 [INFO] [Fake HTTP] Dane od 127.0.0.1: REQUEST: GET / HTTP/1.1
+2026-01-14 22:24:53,621 [INFO] Zapisano zdarzenie #51 w DB: Fake HTTP od 127.0.0.1
+2026-01-14 22:24:54,243 [INFO] [+] Połączenie z 127.0.0.1:49982 na porcie 2121 (FTP)
+2026-01-14 22:24:54,243 [INFO] [Fake FTP] Dane od 127.0.0.1: FTP_CONNECTION
+2026-01-14 22:24:54,252 [INFO] Zapisano zdarzenie #52 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:54,252 [INFO] [Fake FTP] Dane od 127.0.0.1: USER ftp
+2026-01-14 22:24:54,258 [INFO] Zapisano zdarzenie #53 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:54,258 [INFO] [Fake FTP] Dane od 127.0.0.1: PASS qwerty
+2026-01-14 22:24:54,265 [INFO] Zapisano zdarzenie #54 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:55,013 [INFO] [+] Połączenie z 127.0.0.1:49987 na porcie 2121 (FTP)
+2026-01-14 22:24:55,014 [INFO] [Fake FTP] Dane od 127.0.0.1: FTP_CONNECTION
+2026-01-14 22:24:55,025 [INFO] Zapisano zdarzenie #55 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:55,025 [INFO] [Fake FTP] Dane od 127.0.0.1: USER oracle
+2026-01-14 22:24:55,027 [INFO] Zapisano zdarzenie #56 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:55,027 [INFO] [Fake FTP] Dane od 127.0.0.1: PASS 123456
+2026-01-14 22:24:55,027 [INFO] Zapisano zdarzenie #57 w DB: Fake FTP od 127.0.0.1
+2026-01-14 22:24:55,608 [INFO] [+] Połączenie z 127.0.0.1:49988 na porcie 2222 (SSH)
+2026-01-14 22:24:55,609 [INFO] [Fake SSH] Dane od 127.0.0.1: CONNECTION_ATTEMPT
+2026-01-14 22:24:55,617 [INFO] Zapisano zdarzenie #58 w DB: Fake SSH od 127.0.0.1
+2026-01-14 22:24:55,617 [INFO] [Fake SSH] Dane od 127.0.0.1: user
+admin123
+2026-01-14 22:24:55,620 [INFO] Zapisano zdarzenie #59 w DB: Fake SSH od 127.0.0.1
+2026-01-14 22:24:55,932 [INFO] [+] Połączenie z 127.0.0.1:49991 na porcie 2323 (TELNET)
+2026-01-14 22:24:55,932 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:55,938 [INFO] Zapisano zdarzenie #60 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:56,133 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: anonymous
+2026-01-14 22:24:56,145 [INFO] Zapisano zdarzenie #61 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:56,333 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: ftp
+2026-01-14 22:24:56,342 [INFO] Zapisano zdarzenie #62 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:57,254 [INFO] [+] Połączenie z 127.0.0.1:49998 na porcie 2323 (TELNET)
+2026-01-14 22:24:57,254 [INFO] [Fake Telnet] Dane od 127.0.0.1: TELNET_CONNECTION
+2026-01-14 22:24:57,262 [INFO] Zapisano zdarzenie #63 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:57,475 [INFO] [Fake Telnet] Dane od 127.0.0.1: Username: ftp
+2026-01-14 22:24:57,480 [INFO] Zapisano zdarzenie #64 w DB: Fake Telnet od 127.0.0.1
+2026-01-14 22:24:57,676 [INFO] [Fake Telnet] Dane od 127.0.0.1: Password: password
+2026-01-14 22:24:57,682 [INFO] Zapisano zdarzenie #65 w DB: Fake Telnet od 127.0.0.1

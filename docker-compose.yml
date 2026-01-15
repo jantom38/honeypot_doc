@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  honeypot:
+    build: .
+    container_name: python_honeypot_primary
+    command: python main.py
+    ports:
+      - "2222:2222"
+      - "8080:8080"
+      - "2121:2121"
+      - "2323:2323"
+      - "2525:2525"
+      - "3306:3306"
+    volumes:
+      - ./data:/app/data
+      - ./config.json:/app/config.json:ro
+    environment:
+      - IS_DOCKER=true
+    restart: unless-stopped
+    networks:
+      - honeynet
+
+  honeypot_secondary:
+    build: .
+    container_name: python_honeypot_secondary
+    command: python main.py
+    ports:
+      - "2223:2222"
+      - "8081:8080"
+      - "2122:2121"
+      - "2324:2323"
+      - "2526:2525"
+      - "3307:3306"
+    volumes:
+      - ./data:/app/data
+      - ./config.json:/app/config.json:ro
+    environment:
+      - IS_DOCKER=true
+    restart: unless-stopped
+    networks:
+      - honeynet
+
+  dashboard:
+    build: .
+    container_name: honeypot_dashboard
+    command: streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./dashboard.py:/app/dashboard.py:ro
+      - ./pages:/app/pages:ro
+      - ./session_replay.py:/app/session_replay.py:ro
+    environment:
+      - IS_DOCKER=true
+    depends_on:
+      - honeypot
+    restart: unless-stopped
+    networks:
+      - honeynet
+
+networks:
+  honeynet:
+    driver: bridge

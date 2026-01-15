@@ -1,0 +1,7 @@
+.git
+.idea
+.venv
+__pycache__
+*.pyc
+honeypot_debug.log
+honeypot_events.db

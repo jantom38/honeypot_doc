@@ -1,0 +1,228 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0 Calibri;}{\f1 Consolas;}}
+{\colortbl;\red0\green0\blue0;\red40\green40\blue40;\red0\green120\blue215;}
+\fs24
+\pard\qc\b\fs40 Sprawozdanie z projektu\par
+\pard\qc\b\fs44 \cf3 Advanced Honeypot System\cf1\par
+\pard\qc\fs24 (system honeypot + dashboard analityczny)\par
+\pard\qc\fs22\i Autor: ...............................................\par
+\pard\qc\fs22\i Kierunek / Przedmiot: ................................\par
+\pard\qc\fs22\i Data: ................................................\par
+\pard\qc\fs22\i Wersja projektu: 2.0\par
+\pard\qc\fs22\i Repo/Folder: C:\\Users\\jasie\\honeypot_projekt\par
+\pard\qc\fs22\par
+\pard\qc\fs18 (W dokumencie zostawiono miejsca na wklejenie zrzutów ekranu: PuTTY, FileZilla, przeglądarka HTTP oraz wyniki symulacji attacker.py.)\par
+\pard\qc\fs18\par
+\pard\qr\fs18\i Strona 1\i0\par
+\page
+
+\pard\b\fs32 1. Cel projektu\b0\par
+\pard\fs24
+Celem projektu jest stworzenie zaawansowanego systemu honeypot, który emuluje wybrane usługi sieciowe (m.in. SSH, HTTP, FTP, Telnet) w celu rejestrowania i analizy prób ataków. System zapisuje zdarzenia w bazie SQLite oraz udostępnia dashboard analityczny (Streamlit) pozwalający monitorować aktywność w czasie rzeczywistym, wykonywać analizę statystyczną oraz przeglądać sesje atakujących.\par
+\par
+
+\pard\b\fs32 2. Zakres funkcjonalny\b0\par
+\pard\fs24
+\pard\b 2.1 Emulowane usługi (honeypot)\b0\par
+\pard\fs24
+- SSH honeypot (port 2222)\par
+- HTTP honeypot (port 8080)\par
+- FTP honeypot (port 2121)\par
+- Telnet honeypot (port 2323)\par
+\par
+\pard\b 2.2 Rejestrowanie zdarzeń\b0\par
+\pard\fs24
+- logowanie połączeń i adresów IP\par
+- logowanie payloadów (np. zapytań HTTP, komend Telnet/FTP)\par
+- logowanie prób uwierzytelniania (np. username/password)\par
+- zapis do bazy SQLite (tabela events)\par
+\par
+\pard\b 2.3 Dashboard analityczny\b0\par
+\pard\fs24
+- podgląd KPI: liczba zdarzeń, unikalne IP, ostatnie zdarzenie\par
+- wizualizacje: rozkład usług, timeline, top IP\par
+- eksport danych (CSV/JSON)\par
+- dodatkowe strony (Pages): Session Replay, Statistics\par
+\par
+\pard\b 2.4 Narzędzie do generowania ruchu testowego\b0\par
+\pard\fs24
+- skrypt attacker.py generujący przykładowe próby ataków na usługi (SSH/HTTP/FTP/Telnet)\par
+\par
+\page
+
+\pard\b\fs32 3. Architektura rozwiązania\b0\par
+\pard\fs24
+Projekt składa się z dwóch głównych komponentów:\par
+\par
+\pard\b 3.1 Honeypot (backend)\b0\par
+\pard\fs24
+- uruchamiany przez main.py\par
+- nasłuchuje na wybranych portach i obsługuje połączenia\par
+- zapisuje zdarzenia do bazy SQLite\par
+\par
+\pard\b 3.2 Dashboard (frontend)\b0\par
+\pard\fs24
+- uruchamiany przez dashboard.py (Streamlit)\par
+- odczytuje dane z bazy w trybie tylko do odczytu\par
+- prezentuje metryki, wykresy i szczegółowe logi\par
+\par
+\pard\b 3.3 Baza danych\b0\par
+\pard\fs24
+- plik: honeypot_events.db\par
+- tabela kluczowa: events\par
+\par
+\pard\b 3.4 Docker (wdrożenie)\b0\par
+\pard\fs24
+- docker-compose uruchamia dwa kontenery: honeypot i dashboard\par
+- współdzielony katalog /app/data zapewnia wspólny dostęp do bazy danych\par
+\par
+\page
+
+\pard\b\fs32 4. Środowisko uruchomieniowe\b0\par
+\pard\fs24
+\pard\b 4.1 Wersje i narzędzia\b0\par
+\pard\fs24
+- System operacyjny: Windows 10/11\par
+- Python: 3.12 (lokalnie)\par
+- Docker Desktop + docker-compose (wariant kontenerowy)\par
+- PuTTY (test SSH)\par
+- FileZilla (test FTP)\par
+- Przeglądarka/ curl (test HTTP)\par
+\par
+\pard\b 4.2 Porty usług\b0\par
+\pard\fs24
+- SSH: localhost:2222\par
+- HTTP: http://localhost:8080\par
+- FTP: localhost:2121\par
+- Telnet: localhost:2323\par
+- Dashboard: http://localhost:8501\par
+\par
+\page
+
+\pard\b\fs32 5. Instrukcja uruchomienia\b0\par
+\pard\fs24
+\pard\b 5.1 Uruchomienie lokalne (Python)\b0\par
+\pard\fs24
+1) Uruchom honeypot:\par
+\pard\li360\f1\fs20
+cd C:\\Users\\jasie\\honeypot_projekt\line
+py -3.12 main.py\par
+\pard\f0\fs24
+2) Uruchom dashboard (nowe okno terminala):\par
+\pard\li360\f1\fs20
+cd C:\\Users\\jasie\\honeypot_projekt\line
+py -3.12 -m streamlit run dashboard.py\par
+\pard\f0\fs24
+3) (Opcjonalnie) Uruchom generowanie ruchu testowego:\par
+\pard\li360\f1\fs20
+cd C:\\Users\\jasie\\honeypot_projekt\line
+py -3.12 attacker.py\par
+\pard\f0\fs24
+\par
+\pard\b 5.2 Uruchomienie kontenerowe (Docker)\b0\par
+\pard\fs24
+1) Start:\par
+\pard\li360\f1\fs20
+docker-compose up --build\par
+\pard\f0\fs24
+2) Dashboard: \f1 http://localhost:8501\f0\par
+\par
+\page
+
+\pard\b\fs32 6. Testy działania (z miejscami na screeny)\b0\par
+\pard\fs24
+Poniższe sekcje zawierają miejsca na wklejenie zrzutów ekranu dokumentujących działanie systemu.\par
+\par
+
+\pard\b 6.1 Test SSH (PuTTY)\b0\par
+\pard\fs24
+Cel: potwierdzić, że honeypot przyjmuje połączenia na porcie 2222 oraz loguje próby uwierzytelniania.\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 1: PuTTY - konfiguracja połączenia SSH na port 2222]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu)\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 2: PuTTY - próba logowania / komunikaty połączenia]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu)\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 3: Konsola honeypota - log zdarzenia SSH]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu z terminala gdzie działa main.py)\par
+\par
+
+\pard\b 6.2 Test FTP (FileZilla)\b0\par
+\pard\fs24
+Cel: potwierdzić, że honeypot FTP działa na porcie 2121 oraz rejestruje username/password i podstawowe komendy.\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 4: FileZilla - konfiguracja połączenia (host, port 2121)]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu)\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 5: FileZilla - log połączenia / błędy logowania (oczekiwane w honeypot)]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu)\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 6: Konsola honeypota - log zdarzeń FTP]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu)\par
+\par
+
+\pard\b 6.3 Test HTTP (przeglądarka)\b0\par
+\pard\fs24
+Cel: potwierdzić, że honeypot HTTP działa na porcie 8080 oraz loguje żądania i podejrzane payloady (np. /admin, parametry SQLi/XSS).\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 7: Przeglądarka - wejście na http://localhost:8080/]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu)\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 8: Przeglądarka - wejście na /admin lub payload SQLi/XSS]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu)\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 9: Konsola honeypota - log zdarzeń HTTP]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu)\par
+\par
+
+\pard\b 6.4 Test automatyczny (attacker.py)\b0\par
+\pard\fs24
+Cel: automatyczne wygenerowanie wielu zdarzeń na różnych usługach w krótkim czasie oraz weryfikacja ich obecności w dashboardzie.\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 10: Uruchomienie attacker.py w konsoli]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu z wykonania attacker.py)\par
+\par
+\pard\b\fs26 [WSTAW SCREEN 11: Dashboard - wzrost liczby zdarzeń + wykresy + Top IP]\b0\par
+\pard\fs24 (Tu wklej zrzut ekranu z dashboardu)\par
+\par
+\page
+
+\pard\b\fs32 7. Wyniki i obserwacje\b0\par
+\pard\fs24
+W trakcie testów zaobserwowano, że system poprawnie:\par
+- przyjmuje połączenia na zadanych portach\par
+- loguje zdarzenia w tabeli events\par
+- umożliwia podgląd zdarzeń w dashboardzie\par
+- pozwala generować ruch testowy attacker.py\par
+\par
+\pard\b 7.1 Przykładowe typy wykrytych zdarzeń\b0\par
+\pard\fs24
+- próby logowania SSH/FTP\par
+- skanowanie zasobów HTTP (/admin, /wp-admin, itp.)\par
+- podejrzane parametry (SQL injection / XSS)\par
+\par
+\page
+
+\pard\b\fs32 8. Wnioski\b0\par
+\pard\fs24
+Projekt spełnia założenia funkcjonalne: stanowi wieloprotokołowy honeypot z centralnym logowaniem oraz warstwą analityczno-wizualizacyjną. Dzięki wykorzystaniu narzędzi (PuTTY, FileZilla, przeglądarka oraz attacker.py) możliwe jest odtworzenie scenariuszy typowych ataków i analiza ich przebiegu. Rozwiązanie może być wykorzystane edukacyjnie (laboratoria bezpieczeństwa, demonstracje) oraz jako czujnik do obserwacji prób skanowania w sieci testowej.\par
+\par
+
+\pard\b\fs32 9. Bibliografia / źródła\b0\par
+\pard\fs24
+- Dokumentacja Streamlit: https://streamlit.io\par
+- Dokumentacja SQLite: https://www.sqlite.org\par
+- Dokumentacja Docker: https://docs.docker.com\par
+- MaxMind GeoIP2 (opcjonalnie): https://dev.maxmind.com/geoip\par
+\par
+
+\pard\b\fs32 10. Załączniki\b0\par
+\pard\fs24
+- attacker.py (generator ruchu testowego)\par
+- docker-compose.yml / Dockerfile (uruchomienie kontenerowe)\par
+- honeypot_events.db (baza zdarzeń)\par
+- honeypot_debug.log (log systemowy)\par
+\par
+\pard\qc\fs18\i Koniec sprawozdania\i0\par
+}

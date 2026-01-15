@@ -1,0 +1,14 @@
+# Core dependencies
+streamlit
+pandas
+plotly
+
+# Network and security
+requests
+paramiko
+
+# Database
+# sqlite3 - built-in, no need to install
+
+# Utilities
+python-dateutil
