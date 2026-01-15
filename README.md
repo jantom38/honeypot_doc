@@ -1,4 +1,4 @@
-# Advanced Honeypot System
+# Honeypot System
 
 System typu Low-Interaction Honeypot służący do wykrywania intruzów, analizy zagrożeń (Threat Intelligence) oraz edukacji w zakresie cyberbezpieczeństwa. Projekt wykorzystuje konteneryzację Docker do bezpiecznej izolacji i łatwego wdrożenia.
 
